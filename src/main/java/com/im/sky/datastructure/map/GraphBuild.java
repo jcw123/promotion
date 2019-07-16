@@ -5,5 +5,5 @@ package com.im.sky.datastructure.map;
  */
 public interface GraphBuild {
 
-    void build();
+    void build() throws Exception;
 }
