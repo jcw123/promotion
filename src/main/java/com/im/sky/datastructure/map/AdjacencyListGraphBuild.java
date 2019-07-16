@@ -28,6 +28,9 @@ public class AdjacencyListGraphBuild implements GraphBuild {
 
     }
 
+    public VNode[] getGraph() {
+        return graph;
+    }
 
     @Override
     public void build() throws Exception {
@@ -73,7 +76,7 @@ public class AdjacencyListGraphBuild implements GraphBuild {
         }
     }
 
-    private static class VNode {
+    public static class VNode {
         private char c;
 
         private Node next;
@@ -82,15 +85,31 @@ public class AdjacencyListGraphBuild implements GraphBuild {
             this.c = c;
             this.next = next;
         }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public char getC() {
+            return c;
+        }
     }
 
 
-    private static class Node {
+    public static class Node {
         private int w;
 
         private int adj;
 
         private Node next;
+
+        public int getAdj() {
+            return adj;
+        }
+
+        public Node getNext() {
+            return next;
+        }
 
         @Override
         public String toString() {
