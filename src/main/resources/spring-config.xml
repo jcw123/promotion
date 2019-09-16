@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="people" class="com.im.sky.spring.bean.People" scope="prototype">
+        <property name="name" value="${name}" />
+    </bean>
+
+    <!--<bean id="people2" class="com.im.sky.spring.bean.People">-->
+        <!--<property name="name" value="${name2}" />-->
+    <!--</bean>-->
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="false" />
+        <property name="locations">
+            <list>
+                <value>classpath:properties/system-tmp.properties</value>
+                <value>classpath:properties/system.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="advice" class="com.im.sky.spring.aspect.GenericAdvice" />
+
+    <aop:config>
+        <aop:aspect id="aspect1" ref="advice">
+            <aop:pointcut id="p1" expression="execution(* com.im.sky.spring.bean.People.say(..))" />
+            <aop:before pointcut-ref="p1" method="before" />
+        </aop:aspect>
+        <aop:aspect id="aspect2" ref="advice">
+            <aop:pointcut expression="execution(* com.im.sky.spring.bean.People.*(..))" id="p2" />
+            <aop:around method="around" pointcut-ref="p2" />
+            <aop:after pointcut-ref="p2" method="after" />
+        </aop:aspect>
+    </aop:config>
+
+</beans>
