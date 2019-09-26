@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties>
+        <property name="username" value="root" />
+        <property name="password" value="jcw123" />
+    </properties>
+
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.im.sky.mybatis.GenericDao" alias="GenericDao" />
+        <!-- 可以直接将包下的全路径报名用类的simpleName表示 -->
+        <!--<package name="com.im.sky.mybatis" />-->
+    </typeAliases>
+
+    <!--<typeHandlers>-->
+        <!--<typeHandler handler="com.im.sky.mybatis.handler.ExampleHandler" />-->
+    <!--</typeHandlers>-->
+    
+    <!--<objectFactory type="com.im.sky.mybatis.ExampleObjectFactory">-->
+        <!--<property name="name" value="selfFactory" />-->
+        <!--<property name="val" value="heheda" />-->
+    <!--</objectFactory>-->
+
+    <!--<objectWrapperFactory type="com.im.sky.mybatis.ExampleObjectWrapperFactory" />-->
+
+    <!--<reflectorFactory type="com.im.sky.mybatis.ExampleReflectorFactory" />-->
+
+    <!--<plugins>-->
+        <!--<plugin interceptor="com.im.sky.mybatis.interceptor.ExamplePlugin">-->
+            <!--<property name="name" value="jcw" />-->
+            <!--<property name="words"  value="2" />-->
+        <!--</plugin>-->
+    <!--</plugins>-->
+    
+    <environments default="test">
+        <environment id="test">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/testdb0" />
+                <property name="username" value="${username}" />
+                <property name="password" value="${password}" />
+            </dataSource>
+        </environment>
+    </environments>
+    
+    <!--<databaseIdProvider type="DB_VENDOR">-->
+        <!--<property name="SQL Server" value="sqlserver" />-->
+        <!--<property name="DB2" value="db2" />-->
+        <!--<property name="Oracle" value="oracle" />-->
+    <!--</databaseIdProvider>-->
+
+    <mappers>
+        <mapper resource="mapper/Init.xml" />
+    </mappers>
+
+</configuration>

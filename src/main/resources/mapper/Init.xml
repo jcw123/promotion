@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.im.sky.mybatis.GenericDao">
+
+    <sql id="onlyOne">
+        select * from ${tableName} limit 1;
+    </sql>
+
+    <select id="findAnyOne" resultType="java.lang.Object">
+        <include refid="onlyOne">
+            <property name="tableName" value="testtable0"></property>
+        </include>
+    </select>
+
+    <select id="findObjectList" parameterType="java.lang.Integer">
+        select * from testtable0 limit #{size}
+    </select>
+    
+    <insert id="insert" parameterType="java.util.Map">
+        INSERT INTO testtable0(id, age) VALUES(#{id}, #{age})
+    </insert>
+
+    <update id="update" parameterType="java.util.Map">
+        UPDATE testtable0 SET age = #{age} WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="java.util.Map">
+        DELETE FROM testtable0 WHERE id = #{id}
+    </delete>
+
+    <select id="selectOnlyPerson" parameterType="java.util.Map" resultType="com.im.sky.mybatis.domain.Person"
+    useCache="true">
+        select * from testtable0 where id = #{id}
+    </select>
+</mapper>

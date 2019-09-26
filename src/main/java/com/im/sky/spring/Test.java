@@ -6,6 +6,16 @@ package com.im.sky.spring;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println("hello, world");
+        AA o = new A();
+        System.out.println(o.getClass());
+        System.out.println(AA.class);
+    }
+
+    private static interface AA {
+
+    }
+
+    private static class A implements AA{
+
     }
 }
