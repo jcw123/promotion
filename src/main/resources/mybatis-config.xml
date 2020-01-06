@@ -58,6 +58,7 @@
 
     <mappers>
         <mapper resource="mapper/Init.xml" />
+        <mapper class="com.im.sky.mybatis.GenericDao"/>
     </mappers>
 
 </configuration>

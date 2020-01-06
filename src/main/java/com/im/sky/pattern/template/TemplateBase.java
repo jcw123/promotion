@@ -16,8 +16,6 @@ package com.im.sky.pattern.template;
 public class TemplateBase {
 
     public static void main(String[] args) {
-        HttpServlet servlet = new InitServlet();
-        servlet.service("GET");
     }
 
     static interface Servlet {

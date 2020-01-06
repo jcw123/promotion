@@ -1,9 +1,11 @@
 package com.im.sky.test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.lang.annotation.*;
+import java.lang.reflect.Type;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.SynchronousQueue;
 
 /**
  * @Author: jiangcw
@@ -12,32 +14,46 @@ import java.util.stream.Collectors;
  */
 public class Test {
 
-    public static void main(String[] args) {
-        ArrayList<People> list = new ArrayList<>();
-        Map<Integer, List<String>> map = list.stream().collect(Collectors.groupingBy(People::getAge, Collectors.mapping(People::getName, Collectors.toList())));
-        System.out.println(map.size());
+    public static void main(String[] args) throws Exception {
+        Class cls = B.class;
+        System.out.println(cls.getName());
+        System.out.println(cls.getGenericSuperclass());
+        System.out.println(cls.getAnnotatedSuperclass().getType().getTypeName());
+        Type type = cls.getGenericSuperclass();
+        System.out.println(type.getTypeName());
+        System.out.println(cls.getAnnotation(TestAnnotations.class));
     }
 
-    private static class People {
-        private int age;
+    private interface interface1 {
 
-        private String name;
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
     }
 
+    private interface Interface2 {
+
+    }
+
+    private static class A implements interface1 {
+
+    }
+
+    @TestAnnotation(name = "jcw1")
+    @TestAnnotation(name = "jcw2")
+    private static class B extends  A  implements Interface2{
+
+    }
+
+    @Documented
+    @Target(ElementType.TYPE)
+    @Retention(RetentionPolicy.RUNTIME)
+    @Repeatable(TestAnnotations.class)
+    private @interface TestAnnotation {
+        String name() default "jcw";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    private @interface TestAnnotations {
+        TestAnnotation[] value();
+    }
 }

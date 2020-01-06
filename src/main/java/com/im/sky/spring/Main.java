@@ -5,6 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * @Author: jiangcw
@@ -17,5 +19,8 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         People people = context.getBean(People.class);
         people.say();
+        Properties properties = System.getProperties();
+        Map<String, String> map = System.getenv();
+        System.out.println("end");
     }
 }
