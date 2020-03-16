@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.util.StringUtils;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
 /**
@@ -15,8 +16,35 @@ public class Test {
 
     @org.junit.Test
     public void test() {
-        System.out.println(Arrays.toString(toSendPayArray("1,2,3")));
-        System.out.println(Arrays.toString(toSendPayArray("1,")));
+        Class<A> cls = A.class;
+        Method[] methods =  cls.getMethods();
+        System.out.println(methods.length);
+    }
+
+    private static class A {}
+
+    private static class AA extends A implements B, BB {
+        void getAA() {}
+
+        @Override
+        public void getB() {
+
+        }
+
+        @Override
+        public void getBB() {
+
+        }
+    }
+
+    private static
+
+    interface B {
+        void getB();
+    }
+
+    interface BB {
+        void getBB();
     }
 
     @org.junit.Test

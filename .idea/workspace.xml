@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026caf0a-e20d-4a75-bd44-54c0bfa75617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/collection/BitSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/ddd/AbstractOneDayActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/ddd/DefaultOneDayActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/ddd/OneDayActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/ddd/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/TaggedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/TaggedArraySpliterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/ZBiFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/reflect/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/reflect/TestClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/CommonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/GenericTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/util/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/util/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/util/DBParseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/im/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/im/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +42,17 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="promotion" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,9 +78,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/jd_source/engine.purchase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jvm-compressor-benchmark" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,13 +97,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.spring.Main" />
+  <component name="RunManager" selected="Application.DBParseUtils">
+    <configuration name="BitSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.collection.BitSetTest" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.spring.*" />
+          <option name="PATTERN" value="com.im.sky.collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SPITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.spi.SPITest" />
+    <configuration name="CommonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.test.CommonTest" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.spi.*" />
+          <option name="PATTERN" value="com.im.sky.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.functional.Test" />
+    <configuration name="DBParseUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.util.DBParseUtils" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.functional.*" />
+          <option name="PATTERN" value="com.im.sky.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassTest.testGetAnnotatedSuperclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClassLoaderTest.testBootPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +146,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.im.sky" />
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.ClassTest" />
-      <option name="METHOD_NAME" value="testGetAnnotatedSuperclass" />
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.ClassLoaderTest" />
+      <option name="METHOD_NAME" value="testBootPath" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CopyOnWriteArrayListTest.testCopyOnWriteArrayList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClassLoaderTest.testLoadClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +162,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.im.sky" />
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.CopyOnWriteArrayListTest" />
-      <option name="METHOD_NAME" value="testCopyOnWriteArrayList" />
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.ClassLoaderTest" />
+      <option name="METHOD_NAME" value="testLoadClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CopyOnWriteArrayListTest.testCopyOnWriteArrayList" />
-        <item itemvalue="Application.SPITest" />
-        <item itemvalue="JUnit.ClassTest.testGetAnnotatedSuperclass" />
+        <item itemvalue="Application.DBParseUtils" />
+        <item itemvalue="JUnit.ClassLoaderTest.testLoadClass" />
+        <item itemvalue="JUnit.ClassLoaderTest.testBootPath" />
+        <item itemvalue="Application.CommonTest" />
+        <item itemvalue="Application.BitSetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +248,33 @@
       <workItem from="1578103564009" duration="7000" />
       <workItem from="1578103639466" duration="18738000" />
       <workItem from="1578275611731" duration="28000" />
-      <workItem from="1578275679749" duration="6604000" />
+      <workItem from="1578275679749" duration="19910000" />
+      <workItem from="1578311381007" duration="1361000" />
+      <workItem from="1578361682884" duration="9148000" />
+      <workItem from="1578447667803" duration="22508000" />
+      <workItem from="1578578908151" duration="798000" />
+      <workItem from="1578621501776" duration="70000" />
+      <workItem from="1578621615369" duration="2872000" />
+      <workItem from="1578879994404" duration="1885000" />
+      <workItem from="1578966912186" duration="1536000" />
+      <workItem from="1579055315194" duration="9210000" />
+      <workItem from="1579140131871" duration="2523000" />
+      <workItem from="1579246044009" duration="676000" />
+      <workItem from="1579399246543" duration="5437000" />
+      <workItem from="1581417698101" duration="763000" />
+      <workItem from="1581475686071" duration="1768000" />
+      <workItem from="1581503324541" duration="748000" />
+      <workItem from="1581558514613" duration="1217000" />
+      <workItem from="1581659863150" duration="4259000" />
+      <workItem from="1581904571985" duration="3100000" />
+      <workItem from="1581990354038" duration="730000" />
+      <workItem from="1582076607809" duration="1346000" />
+      <workItem from="1582853236861" duration="11140000" />
+      <workItem from="1583144029588" duration="950000" />
+      <workItem from="1583894825632" duration="7185000" />
+      <workItem from="1583975732513" duration="573000" />
+      <workItem from="1584063934996" duration="592000" />
+      <workItem from="1584324195206" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="spring、netty等等只是记录">
       <created>1578276780276</created>
@@ -236,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578276780276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="删除敏感信息">
+      <created>1578283046457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578283046457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,8 +302,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -257,7 +337,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring、netty等等只是记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring、netty等等只是记录" />
+    <MESSAGE value="删除敏感信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除敏感信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,6 +787,36 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.25.RELEASE/spring-beans-4.3.25.RELEASE-sources.jar!/org/springframework/beans/factory/config/BeanPostProcessor.java</url>
           <line>79</line>
           <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/StreamTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/collection/BitSetTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/im/sky/ClassLoaderTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
