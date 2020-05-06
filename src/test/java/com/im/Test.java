@@ -16,9 +16,11 @@ public class Test {
 
     @org.junit.Test
     public void test() {
-        Class<A> cls = A.class;
-        Method[] methods =  cls.getMethods();
-        System.out.println(methods.length);
+        System.out.println(!true || true && false);
+    }
+
+    public void set(Object a) {
+        a = new Object();
     }
 
     private static class A {}

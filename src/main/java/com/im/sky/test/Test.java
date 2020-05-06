@@ -1,9 +1,11 @@
 package com.im.sky.test;
 
+import com.alibaba.fastjson.JSON;
+
 import java.lang.annotation.*;
 import java.lang.reflect.Type;
-import java.util.Arrays;
-import java.util.Collection;
+import java.math.BigDecimal;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.SynchronousQueue;
 
@@ -15,13 +17,13 @@ import java.util.concurrent.SynchronousQueue;
 public class Test {
 
     public static void main(String[] args) throws Exception {
-        Class cls = B.class;
-        System.out.println(cls.getName());
-        System.out.println(cls.getGenericSuperclass());
-        System.out.println(cls.getAnnotatedSuperclass().getType().getTypeName());
-        Type type = cls.getGenericSuperclass();
-        System.out.println(type.getTypeName());
-        System.out.println(cls.getAnnotation(TestAnnotations.class));
+        BigDecimal t = new BigDecimal(5);
+        sub(t);
+        System.out.println(t.toPlainString());
+    }
+
+    private static void sub(BigDecimal m) {
+        m.subtract(new BigDecimal(3));
     }
 
     private interface interface1 {
