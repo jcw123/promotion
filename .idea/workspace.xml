@@ -2,38 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026caf0a-e20d-4a75-bd44-54c0bfa75617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/collection/TreeSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/collection/domain/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/ThreadId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/enums/InnerEnumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/enums/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/ExtendsSymbolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/GenericTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/Plate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/generic/Reducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/lambada/LambadaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/cglib/CglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/cglib/MyMethodInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/$Proxy0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/Biology.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/JdkProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/ProxyInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/PhantomReferenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/SelfSoftReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/SelfWeakReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/SelfWeakReferenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/WeakHashMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/bugs/ToArrayBugs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/datastructure/queue/BaseEle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/datastructure/queue/IndexSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/datastructure/queue/MultiPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/datastructure/queue/SkipList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/datastructure/queue/test/MultiPriorityQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/DefaultClassloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/datastructure/BitSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/stream/BiFunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/stream/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/NetworkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/SerialExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/unsafe/DirectByteBufferTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/unsafe/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/unsafe/UnsafeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/unsafe/UnsafeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/LeakyBucketLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/LimitByScript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/TimeWindowLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/TimeWindowLimitV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/TokenLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/single/AtomicIntegerLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/single/RateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/single/RedisLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/limit/single/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatchV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/LimitLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/SimpleCyclicBarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/FIFOMutex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/cp/CyclicBarrierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ClientInHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ClientOutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerInHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerOutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/client/MsgFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/client/ResultListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/Codec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/CodecFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/java/JavaCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/java/JavaDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/java/JavaEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/joy/JoyDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/codec/joy/JoyEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/config/AbstractIdConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/config/ConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/config/ProviderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/error/ClientTimeoutException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/error/JoyCodecException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/error/RpcException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/filter/AbstractFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/filter/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/filter/FilterChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/filter/ProviderInvokerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/BaseMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/ConnectListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/MessageBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/MessageHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/RequestMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/msg/ResponseMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/protocol/JoyProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/protocol/Protocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/protocol/ProtocolFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/protocol/ProtocolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/registry/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/BaseServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/BaseTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/BusinessPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/Invoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/InvokerHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/JoyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/ProviderProxyInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/server/ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ClientTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ClientTransportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ConnectionChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/JoyServerTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/PooledBufHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ServerChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ServerChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ServerTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/transport/ServerTransportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/ClassLoaderUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/ClassTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/CodecUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/NamedThreadFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/NetUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/ReflectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test2/util/ThreadPoolUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/redis/zset/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/BigDecimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/HeapSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/MergeSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/NoVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/QuickSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/xstream/XstreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/xstream/domain/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/xstream/domain/Son.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/CodecTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/MethodHandleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/javacore/stream/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/im/sky/javacore/stream/StreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/im/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/im/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,13 +200,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GenericTest">
-    <configuration name="ExtendsSymbolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.generic.ExtendsSymbolTest" />
+  <component name="RunManager" selected="Application.LimitByScript">
+    <configuration name="LimitByScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.limit.LimitByScript" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.generic.*" />
+          <option name="PATTERN" value="com.im.sky.limit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,38 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.generic.GenericTest" />
+    <configuration name="SkipList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.datastructure.queue.SkipList" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.generic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="People" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.reference.People" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.reference.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhantomReferenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.reference.PhantomReferenceTest" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.reference.*" />
+          <option name="PATTERN" value="com.im.sky.datastructure.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,20 +240,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CodecTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="promotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.im.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.im.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.CodecTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodecTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="promotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.im.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.im.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.CodecTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.PhantomReferenceTest" />
-      <item itemvalue="Application.People" />
+      <item itemvalue="Application.SkipList" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.ExtendsSymbolTest" />
-      <item itemvalue="Application.GenericTest" />
+      <item itemvalue="JUnit.CodecTest.test2" />
+      <item itemvalue="JUnit.CodecTest.test3" />
+      <item itemvalue="Application.LimitByScript" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GenericTest" />
-        <item itemvalue="Application.ExtendsSymbolTest" />
+        <item itemvalue="Application.LimitByScript" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.People" />
-        <item itemvalue="Application.PhantomReferenceTest" />
+        <item itemvalue="Application.SkipList" />
+        <item itemvalue="JUnit.CodecTest.test3" />
+        <item itemvalue="JUnit.CodecTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +421,54 @@
       <workItem from="1588126833825" duration="1320000" />
       <workItem from="1588211951790" duration="1189000" />
       <workItem from="1588481066580" duration="1403000" />
-      <workItem from="1588730564844" duration="862000" />
+      <workItem from="1588730564844" duration="2758000" />
+      <workItem from="1588821295657" duration="1525000" />
+      <workItem from="1588903038046" duration="582000" />
+      <workItem from="1589199902303" duration="594000" />
+      <workItem from="1589251254658" duration="6965000" />
+      <workItem from="1589345292729" duration="7050000" />
+      <workItem from="1589431512307" duration="1337000" />
+      <workItem from="1589531475159" duration="5521000" />
+      <workItem from="1589772576124" duration="8946000" />
+      <workItem from="1589944403447" duration="15196000" />
+      <workItem from="1590381388335" duration="14766000" />
+      <workItem from="1590465036194" duration="27015000" />
+      <workItem from="1590551308438" duration="8097000" />
+      <workItem from="1590570794209" duration="9895000" />
+      <workItem from="1590624955572" duration="22472000" />
+      <workItem from="1590749663536" duration="632000" />
+      <workItem from="1591179619979" duration="3977000" />
+      <workItem from="1591250396975" duration="5385000" />
+      <workItem from="1591342115169" duration="3831000" />
+      <workItem from="1591683064671" duration="6776000" />
+      <workItem from="1591700375319" duration="3606000" />
+      <workItem from="1591855934296" duration="14604000" />
+      <workItem from="1591928120066" duration="8508000" />
+      <workItem from="1592117875946" duration="3015000" />
+      <workItem from="1592182956335" duration="22517000" />
+      <workItem from="1592268768822" duration="7819000" />
+      <workItem from="1592390426156" duration="4864000" />
+      <workItem from="1592457177077" duration="21267000" />
+      <workItem from="1592820345014" duration="7724000" />
+      <workItem from="1592883875142" duration="23805000" />
+      <workItem from="1592963402611" duration="15886000" />
+      <workItem from="1593594656905" duration="10856000" />
+      <workItem from="1593683469530" duration="7923000" />
+      <workItem from="1593739898944" duration="10670000" />
+      <workItem from="1593942983524" duration="583000" />
+      <workItem from="1593999903185" duration="11989000" />
+      <workItem from="1594115995161" duration="832000" />
+      <workItem from="1594173177135" duration="1207000" />
+      <workItem from="1594188455735" duration="5078000" />
+      <workItem from="1594261481153" duration="14584000" />
+      <workItem from="1594365663297" duration="915000" />
+      <workItem from="1594604245173" duration="1407000" />
+      <workItem from="1594690905669" duration="7161000" />
+      <workItem from="1594891274783" duration="9527000" />
+      <workItem from="1594950727389" duration="668000" />
+      <workItem from="1595135418169" duration="5430000" />
+      <workItem from="1595225506750" duration="1673000" />
+      <workItem from="1595296600449" duration="888000" />
     </task>
     <task id="LOCAL-00001" summary="spring、netty等等只是记录">
       <created>1578276780276</created>
@@ -348,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584324842554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="动态代理">
+      <created>1588731494634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588731494635</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,500 +553,110 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/Test.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/Test.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.class</url>
-          <line>53</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.class</url>
-          <line>68</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/builder/xml/XMLConfigBuilder.class</url>
-          <line>85</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class</url>
-          <line>123</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/BaseExecutor.class</url>
-          <line>112</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/CachingExecutor.class</url>
-          <line>60</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/common/Server.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="10" />
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/single/thread/Client.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/im/sky/MapTest.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/im/sky/MapTest.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ConcurrentHashMap.java</url>
-          <line>2256</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/ReentrantReadWriteLockTest.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/ReentrantReadWriteLockTest.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/ReentrantReadWriteLockTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/test/ReentrantReadWriteLockTest.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/AbstractExecutorService.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/AbstractExecutorService.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ThreadPoolExecutor.java</url>
-          <line>1127</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/common/Client.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/nio/self/Client.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/nio/self/Server.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java</url>
           <line>23</line>
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/nio/self/v1/Server.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/limit/TokenLimit.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/nio/self/v1/Client.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/limit/TokenLimit.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/io/nio/self/v1/Server.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServer.java</url>
           <line>48</line>
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServer.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClient.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServerHandler.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClientHandler.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClientHandler.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClientHandler.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServer.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServer.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
-          <line>337</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
-          <line>364</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServerHandler.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClientHandler.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardClientHandler.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServerHandler.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/discard/DiscardServerHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerParentHandler.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerParentHandler.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerParentHandler.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerParentHandler.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerParentHandler.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerHandler.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServerHandler.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
           <line>17</line>
-          <option name="timeStamp" value="72" />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoClientHandler.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="74" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerOutHandler.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoClientHandler.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="75" />
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
+          <line>319</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoClientHandler.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java</url>
+          <line>254</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>485</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/Client.java</url>
           <line>31</line>
-          <option name="timeStamp" value="76" />
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoClientHandler.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="77" />
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java</url>
+          <line>764</line>
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionServerHandler.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="78" />
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionClientHandler.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="79" />
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java</url>
+          <line>964</line>
+          <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionClientHandler.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionClientHandler.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionDecoder.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionDecoder.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/Client.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/Client.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionEncoder.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionEncoder.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionEncoder.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/demo1/EmotionEncoder.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/distribute/DistributeLockDemo1.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="93" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerInHandler.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/distribute/DistributeLockDemo1.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="95" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/distribute/DistributeLockDemo1.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/zookeeper/Test.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/spi/SPITest.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/BeanScanBootStrap.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/BeanScanBootStrap.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>510</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/spring/Main.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.25.RELEASE/spring-core-4.3.25.RELEASE-sources.jar!/org/springframework/core/env/AbstractEnvironment.java</url>
-          <line>515</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>516</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>520</line>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>523</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>526</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>529</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>532</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>535</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>538</line>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>541</line>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>544</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.25.RELEASE/spring-context-4.3.25.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
-          <line>566</line>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.25.RELEASE/spring-beans-4.3.25.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
-          <line>311</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.25.RELEASE/spring-beans-4.3.25.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
-          <line>542</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.25.RELEASE/spring-beans-4.3.25.RELEASE-sources.jar!/org/springframework/beans/factory/config/BeanPostProcessor.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/Test.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/functional/StreamTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/collection/BitSetTest.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/im/sky/ClassLoaderTest.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/proxy/jdk/ProxyInvoker.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/collection/TreeSetTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/stream/StreamTest.java</url>
           <line>17</line>
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/TreeSet.java</url>
-          <line>254</line>
-          <option name="timeStamp" value="134" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/datastructure/BitSetTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reference/People.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="135" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="172" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

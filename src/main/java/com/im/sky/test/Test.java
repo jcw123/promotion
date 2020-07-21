@@ -1,13 +1,9 @@
 package com.im.sky.test;
 
-import com.alibaba.fastjson.JSON;
-
 import java.lang.annotation.*;
-import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
  * @Author: jiangcw
@@ -17,45 +13,43 @@ import java.util.concurrent.SynchronousQueue;
 public class Test {
 
     public static void main(String[] args) throws Exception {
-        BigDecimal t = new BigDecimal(5);
-        sub(t);
-        System.out.println(t.toPlainString());
+        System.out.println(new Test().mctFromLeafValues(new int[]{6,2,4}));
     }
 
-    private static void sub(BigDecimal m) {
-        m.subtract(new BigDecimal(3));
+    public int mctFromLeafValues(int[] arr) {
+        int len = arr.length;
+        int[][] dp = new int[len][len];
+        int[][] product = new int[len][len];
+        for(int i = 0; i < len; i++) {
+            int p = 1;
+            for(int j = i; j < len; j++) {
+                p = p * arr[j];
+                product[i][j] = p;
+            }
+        }
+        return reverse(dp, product, 0, len - 1);
     }
 
-    private interface interface1 {
-
-    }
-
-    private interface Interface2 {
-
-    }
-
-    private static class A implements interface1 {
-
-    }
-
-    @TestAnnotation(name = "jcw1")
-    @TestAnnotation(name = "jcw2")
-    private static class B extends  A  implements Interface2{
-
-    }
-
-    @Documented
-    @Target(ElementType.TYPE)
-    @Retention(RetentionPolicy.RUNTIME)
-    @Repeatable(TestAnnotations.class)
-    private @interface TestAnnotation {
-        String name() default "jcw";
-    }
-
-    @Retention(RetentionPolicy.RUNTIME)
-    @Target(ElementType.TYPE)
-    @Documented
-    private @interface TestAnnotations {
-        TestAnnotation[] value();
+    private int reverse(int[][] dp, int[][] product, int start, int end) {
+        if(start >= end) {
+            return 0;
+        }
+        if(dp[start][end] != 0) {
+            return dp[start][end];
+        }
+        int sum;
+        if(end -start == 1) {
+            sum = product[start][end];
+        }else {
+            int min = Integer.MAX_VALUE;
+            for(int i = start; i < end; i++) {
+                int leftSum = reverse(dp, product, start, i);
+                int rightSum = reverse(dp, product, i + 1, end);
+                min = Math.min(min, leftSum + rightSum);
+            }
+            sum = min + product[start][end];
+        }
+        dp[start][end] = sum;
+        return dp[start][end];
     }
 }

@@ -9,6 +9,22 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
  **/
 public class CountDownLatch {
 
+    public static void main(String[] args) throws Exception {
+        CountDownLatch latch = new CountDownLatch(2);
+        for(int i = 0; i < 2; i++) {
+            int finalI = i;
+            new Thread(() -> {
+                System.out.println("你好吗" + finalI);
+                try {
+                    Thread.sleep(2000);
+                    latch.countDown();
+                }catch (Exception ignored) {}
+            }).start();
+        }
+        latch.await();
+        System.out.println("main");
+    }
+
     private Sync sync;
 
     public CountDownLatch(int permits) {
@@ -28,6 +44,9 @@ public class CountDownLatch {
     }
 
     private static class Sync extends AbstractQueuedSynchronizer {
+
+
+
         Sync(int permits) {
             if(permits <= 0) {
                 throw new IllegalArgumentException();
