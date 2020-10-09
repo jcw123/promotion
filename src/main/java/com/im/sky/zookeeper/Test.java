@@ -18,7 +18,7 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) throws Exception {
-        CuratorFramework client = CuratorFrameworkFactory.newClient("192.168.99.100:2182", new RetryNTimes(10, 5000));
+        CuratorFramework client = CuratorFrameworkFactory.newClient("11.50.72.60:2181", new RetryNTimes(10, 5000));
         client.start();
         List<String> children = client.getChildren().usingWatcher(new CuratorWatcher() {
             @Override

@@ -15,7 +15,7 @@ public class RedisLimit {
     public static boolean isLimit(String key) {
         // 初始化只有一个请求设置成功
         if(jedis.setnx(key, "1") == 1) {
-            // 设置超时时间为10s
+            // 设置超时时间为10s, 设置失败了影响很大
             jedis.expire(key, 10);
             return false;
         }else {

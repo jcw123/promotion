@@ -1,7 +1,14 @@
 package com.im.sky.test;
 
+import com.alibaba.fastjson.JSON;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.lang.annotation.*;
 import java.math.BigDecimal;
+import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
 
@@ -12,44 +19,44 @@ import java.util.concurrent.ConcurrentSkipListMap;
  */
 public class Test {
 
+    private int flag = 1;
+
+    private int flag2 = 2;
+
+    private final Object MUTEX = new Object();
+
+    private final Object MUTEX2 = new Object();
+
+    private volatile int m = 1;
+
     public static void main(String[] args) throws Exception {
-        System.out.println(new Test().mctFromLeafValues(new int[]{6,2,4}));
+        System.out.println(1L << 32);
     }
 
-    public int mctFromLeafValues(int[] arr) {
-        int len = arr.length;
-        int[][] dp = new int[len][len];
-        int[][] product = new int[len][len];
-        for(int i = 0; i < len; i++) {
-            int p = 1;
-            for(int j = i; j < len; j++) {
-                p = p * arr[j];
-                product[i][j] = p;
-            }
-        }
-        return reverse(dp, product, 0, len - 1);
+    public void testScene2() {
+        flag = 2;
+        m  = 2;
+        flag2 = 3;
     }
 
-    private int reverse(int[][] dp, int[][] product, int start, int end) {
-        if(start >= end) {
-            return 0;
+    public void testScene1() throws Exception {
+        for(int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                while (true) {
+                    if (m == 1) {
+                        if(flag != 1) {
+                            break;
+                        }
+                    }
+                }
+                System.out.println("flag:" + flag);
+            }).start();
         }
-        if(dp[start][end] != 0) {
-            return dp[start][end];
-        }
-        int sum;
-        if(end -start == 1) {
-            sum = product[start][end];
-        }else {
-            int min = Integer.MAX_VALUE;
-            for(int i = start; i < end; i++) {
-                int leftSum = reverse(dp, product, start, i);
-                int rightSum = reverse(dp, product, i + 1, end);
-                min = Math.min(min, leftSum + rightSum);
-            }
-            sum = min + product[start][end];
-        }
-        dp[start][end] = sum;
-        return dp[start][end];
+        Thread.sleep(1000);
+//        synchronized (MUTEX) {
+////            flag = 2;
+////        }
+        flag = 2;
     }
+
 }

@@ -11,6 +11,7 @@ public class ThreadTest {
             while (true) {
                 try {
                     Thread.sleep(1000);
+                    return;
                 }catch (Exception e) {
 
                 }
@@ -26,6 +27,6 @@ public class ThreadTest {
             }catch (Exception e) {}
         });
         t2.start();
-        t.interrupt();
+//        t.interrupt();
     }
 }

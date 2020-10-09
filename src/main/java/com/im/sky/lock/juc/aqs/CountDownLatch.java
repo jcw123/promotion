@@ -44,9 +44,6 @@ public class CountDownLatch {
     }
 
     private static class Sync extends AbstractQueuedSynchronizer {
-
-
-
         Sync(int permits) {
             if(permits <= 0) {
                 throw new IllegalArgumentException();

@@ -1,7 +1,5 @@
 package com.im.sky.datastructure.queue;
 
-import com.sun.istack.internal.NotNull;
-
 import javax.annotation.Nonnull;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -106,7 +104,7 @@ public class MultiPriorityQueue<T extends IndexSelect> implements BlockingQueue<
     }
 
     @Override
-    public int drainTo(@NotNull Collection<? super T> c) {
+    public int drainTo(@Nonnull Collection<? super T> c) {
         int count = 0;
         for(int i = 0; i < this.count; i++) {
             count = queues.get(i).drainTo(c);

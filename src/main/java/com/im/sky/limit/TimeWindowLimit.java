@@ -40,7 +40,7 @@ public class TimeWindowLimit {
 
     private static boolean isLimit(String key) {
         long time = System.nanoTime();
-        jedis.zremrangeByScore(key, 0, time - timeSeconds * 1000 * 1000 * 1000);
+        jedis.zremrangeByScore(key, 0, time - (long)timeSeconds * 1000 * 1000 * 1000);
         long total = jedis.zcard(key);
         if(total > count) {
             return true;

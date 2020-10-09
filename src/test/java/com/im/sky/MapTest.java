@@ -26,6 +26,33 @@ public class MapTest {
     }
 
     @Test
+    public void testHashMapSafe() throws InterruptedException {
+        Map<String, String> map = new HashMap<>();
+        new Thread(()-> {
+            while(true) {
+                map.put("test2", "1");
+//                try {
+//                    Thread.sleep(2);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+            }
+        }).start();
+
+        new Thread(() -> {
+            while(true) {
+                map.put("test", "1");
+//                try {
+//                    Thread.sleep(2);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+            }
+        }).start();
+        Thread.sleep(10000);
+    }
+
+    @Test
     public void testHashMap() {
         HashMap<String, String> map = new HashMap<>();
         map.remove("1");

@@ -21,23 +21,29 @@ public class LimitByScript {
     static {
         String script = "local key = \"redis.limit:\" .. KEYS[1] -- 限流key\n" +
                 "local limit = tonumber(ARGV[1]) -- 限流大小\n" +
+                "local windows = tonumber(ARGV[2]) -- 时间窗口\n" +
+                "local val = redis.call('get', key)\n" +
+                "if not val then\n" +
+                "  redis.call('set', key, 1)\n" +
+                "  redis.call('expire', key, windows)\n" +
+                "  return 0 -- 0表示不限流\n" +
+                "end\n" +
                 "local current = tonumber(redis.call('get', key) or \"0\")\n" +
                 "if current + 1 > limit then\n" +
-                "  return 0\n" +
+                "  return 1 -- 表示限流\n" +
                 "else\n" +
                 "  redis.call('INCRBY', key, 1)\n" +
-                "  redis.call('expire', key, 2)\n" +
-                "  return current + 1;" +
-                "end";
+                "  return 0\n" +
+                "end\n";
         sha = jedis.scriptLoad(script);
         System.out.println(sha);
-        String s2;
-        s2 = jedis.scriptLoad(script);
-        System.out.println(s2);
+//        String s2;
+//        s2 = jedis.scriptLoad(script);
+//        System.out.println(s2);
     }
 
     public static boolean isLimit(String key) {
-        Object isLimit = jedis.evalsha(sha, 1, key, "1");
-        return (Long)isLimit == 0;
+        Object isLimit = jedis.evalsha(sha, 1, key, "1", "10");
+        return (Long)isLimit != 0;
     }
 }
