@@ -98,6 +98,7 @@ public class Snowflake {
                 timestamp = tillNextMills(lastTimestamp);
             }
         }else {
+            // 如果获取的时间戳比较慢，就会导致当前时间的时间戳大于上一次获取的时间戳。会浪费掉很多的时间戳
             sequence = 0;
         }
         lastTimestamp = timestamp;

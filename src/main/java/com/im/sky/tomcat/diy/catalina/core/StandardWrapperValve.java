@@ -1,5 +1,6 @@
 package com.im.sky.tomcat.diy.catalina.core;
 
+import com.im.sky.tomcat.diy.catalina.LifecycleException;
 import com.im.sky.tomcat.diy.catalina.connector.Request;
 import com.im.sky.tomcat.diy.catalina.connector.Response;
 import com.im.sky.tomcat.diy.catalina.valves.ValveBase;
@@ -22,6 +23,11 @@ final class StandardWrapperValve extends ValveBase {
 
     @Override
     public void invoke(Request request, Response response) {
+
+    }
+
+    @Override
+    protected void destroyInternal() throws LifecycleException {
 
     }
 }

@@ -11,6 +11,10 @@ import java.math.BigDecimal;
 import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * @Author: jiangcw
@@ -23,20 +27,25 @@ public class Test {
 
     private int flag2 = 2;
 
-    private final Object MUTEX = new Object();
-
     private final Object MUTEX2 = new Object();
 
     private volatile int m = 1;
 
+    private static final Object MUTEX = new Object();
+
     public static void main(String[] args) throws Exception {
-        System.out.println(1L << 32);
+        AtomicLong atomicLong = new AtomicLong(~(1L << 63));
+        System.out.println(atomicLong.longValue());
+        System.out.println(atomicLong.incrementAndGet());
+
+        System.out.println(1 % -3);  // -2 1
+        System.out.println(-1 % -3); //  1 -1
+        System.out.println(Math.floorMod(1, 3)); // 1
+        System.out.println(Math.floorMod(-1, 3)); // 2
     }
 
     public void testScene2() {
         flag = 2;
-        m  = 2;
-        flag2 = 3;
     }
 
     public void testScene1() throws Exception {

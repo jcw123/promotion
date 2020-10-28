@@ -2,6 +2,7 @@ package com.im.sky.tomcat.diy.catalina.core;
 
 import com.im.sky.tomcat.diy.LifecycleBase;
 import com.im.sky.tomcat.diy.Server;
+import com.im.sky.tomcat.diy.catalina.LifecycleException;
 
 /**
  * @author jiangchangwei
@@ -15,6 +16,11 @@ public class StandardServer extends LifecycleBase implements Server {
 
     @Override
     protected void stopInternal() {
+
+    }
+
+    @Override
+    protected void destroyInternal() throws LifecycleException {
 
     }
 }
