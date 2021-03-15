@@ -1,14 +1,17 @@
 package com.im.sky.test;
 
 import com.alibaba.fastjson.JSON;
+import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.lang.annotation.*;
+import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -34,14 +37,8 @@ public class Test {
     private static final Object MUTEX = new Object();
 
     public static void main(String[] args) throws Exception {
-        AtomicLong atomicLong = new AtomicLong(~(1L << 63));
-        System.out.println(atomicLong.longValue());
-        System.out.println(atomicLong.incrementAndGet());
-
-        System.out.println(1 % -3);  // -2 1
-        System.out.println(-1 % -3); //  1 -1
-        System.out.println(Math.floorMod(1, 3)); // 1
-        System.out.println(Math.floorMod(-1, 3)); // 2
+        Map<String, Character> map = new HashMap<>();
+        System.out.println('1' == map.get("test"));
     }
 
     public void testScene2() {

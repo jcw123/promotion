@@ -19,11 +19,16 @@ public class People implements ApplicationContextAware {
     @Value("${lover:zh}")
     private String lover;
 
-    private String name;
+    private static String name;
 
+    @Value("${people.name}")
     public void setName(String name) {
+        People.name = name;
         System.out.println("name:" + name);
-        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void say() {

@@ -2,35 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026caf0a-e20d-4a75-bd44-54c0bfa75617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_3/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/io/PrintStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/jndi/JNDITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/coordinate/demo1/ThreadTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/coordinate/demo1/ThreadTestByLockSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threads/coordinate/demo1/ThreadTestByLockSupport2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/OKMessageBroker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/OKMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/OkMessageConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mq/OkMessageRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/test1/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/traditional/OldDaoNoUseMybatis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_1642/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_1642/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/github/commons_compress/BasicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/guava/LimiterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/coding/UTF8Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reflect/Custom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reflect/TypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threadlocal/ThreadLocalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/handler/PersonTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/MathTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/NMTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/xml/Dom4JTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/other/Snowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/other/Snowflake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardWrapperValve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/tomcat/diy/catalina/core/StandardWrapperValve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/zookeeper/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/zookeeper/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/system.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,9 +53,9 @@
       <list>
         <option value="Kotlin File" />
         <option value="FxmlFile" />
-        <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -89,12 +82,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/jd_source/order-manage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,47 +101,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (2)">
-    <configuration name="PrintStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.io.PrintStreamTest" />
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="Dom4JTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.xml.Dom4JTest" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.io.*" />
+          <option name="PATTERN" value="com.im.sky.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.spring.Main" />
+      <module name="promotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.im.sky.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NMTTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.test.NMTTest" />
+      <module name="promotion" />
+      <option name="VM_PARAMETERS" value="-XX:NativeMemoryTracking=detail" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.zookeeper.Test" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.zookeeper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.leetcode.Test" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.im.sky.test.Test" />
       <module name="promotion" />
       <extension name="coverage">
@@ -161,12 +149,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.threads.coordinate.demo1.ThreadTest2" />
+    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.threadlocal.ThreadLocalTest" />
       <module name="promotion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.threads.coordinate.demo1.*" />
+          <option name="PATTERN" value="com.im.sky.javacore.threadlocal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.reflect.TypeTest" />
+      <module name="promotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.im.sky.javacore.reflect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,19 +176,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadTest2" />
-      <item itemvalue="Application.PrintStreamTest" />
-      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.NMTTest" />
       <item itemvalue="Application.Test (1)" />
-      <item itemvalue="Application.Test (2)" />
+      <item itemvalue="Application.Dom4JTest" />
+      <item itemvalue="Application.TypeTest" />
+      <item itemvalue="Application.ThreadLocalTest" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.PrintStreamTest" />
-        <item itemvalue="Application.ThreadTest2" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ThreadLocalTest" />
+        <item itemvalue="Application.TypeTest" />
+        <item itemvalue="Application.Dom4JTest" />
       </list>
     </recent_temporary>
   </component>
@@ -425,7 +427,58 @@
       <workItem from="1603072373707" duration="586000" />
       <workItem from="1603421161718" duration="1898000" />
       <workItem from="1603677793553" duration="9143000" />
-      <workItem from="1603855991278" duration="1864000" />
+      <workItem from="1603855991278" duration="2541000" />
+      <workItem from="1604049422733" duration="1368000" />
+      <workItem from="1604126306498" duration="1195000" />
+      <workItem from="1604178289473" duration="2839000" />
+      <workItem from="1604298836405" duration="3396000" />
+      <workItem from="1604393583991" duration="6136000" />
+      <workItem from="1604459722592" duration="13987000" />
+      <workItem from="1604545639818" duration="1484000" />
+      <workItem from="1604630199304" duration="4678000" />
+      <workItem from="1604653160983" duration="1833000" />
+      <workItem from="1604888217388" duration="1469000" />
+      <workItem from="1604973070904" duration="581000" />
+      <workItem from="1604994498815" duration="217000" />
+      <workItem from="1604994915344" duration="4967000" />
+      <workItem from="1605068462816" duration="552000" />
+      <workItem from="1605165732845" duration="2102000" />
+      <workItem from="1605233101425" duration="5409000" />
+      <workItem from="1605492220458" duration="558000" />
+      <workItem from="1605578419388" duration="560000" />
+      <workItem from="1605665251260" duration="581000" />
+      <workItem from="1605750870446" duration="2597000" />
+      <workItem from="1605837614432" duration="1486000" />
+      <workItem from="1605860840891" duration="652000" />
+      <workItem from="1606098894474" duration="921000" />
+      <workItem from="1607305025090" duration="2878000" />
+      <workItem from="1607585206514" duration="662000" />
+      <workItem from="1607743385616" duration="783000" />
+      <workItem from="1607911605016" duration="755000" />
+      <workItem from="1607997649617" duration="803000" />
+      <workItem from="1608084480506" duration="557000" />
+      <workItem from="1608608233114" duration="2512000" />
+      <workItem from="1609126318414" duration="3217000" />
+      <workItem from="1609157798085" duration="1574000" />
+      <workItem from="1609223638868" duration="977000" />
+      <workItem from="1609728767543" duration="2664000" />
+      <workItem from="1609812793699" duration="2263000" />
+      <workItem from="1609986911804" duration="2248000" />
+      <workItem from="1610071980949" duration="559000" />
+      <workItem from="1611029670100" duration="9326000" />
+      <workItem from="1611628239677" duration="2653000" />
+      <workItem from="1611712631886" duration="1671000" />
+      <workItem from="1612173986372" duration="2508000" />
+      <workItem from="1612233203883" duration="1253000" />
+      <workItem from="1612317464500" duration="3799000" />
+      <workItem from="1612404318067" duration="3088000" />
+      <workItem from="1612490580755" duration="1429000" />
+      <workItem from="1612837792100" duration="1721000" />
+      <workItem from="1613984450276" duration="701000" />
+      <workItem from="1614045419971" duration="3349000" />
+      <workItem from="1615534437146" duration="590000" />
+      <workItem from="1615776450906" duration="598000" />
+      <workItem from="1615811799998" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="spring、netty等等只是记录">
       <created>1578276780276</created>
@@ -469,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602209002158</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="leetcode">
+      <created>1603887960711</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603887960711</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +591,8 @@
     <MESSAGE value="动态代理" />
     <MESSAGE value="rpc和netty demo" />
     <MESSAGE value="类加载和tomcat demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="类加载和tomcat demo" />
+    <MESSAGE value="leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -638,7 +699,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java</url>
-          <line>70</line>
+          <line>67</line>
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -695,6 +756,26 @@
           <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ConcurrentHashMap.java</url>
           <line>1062</line>
           <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/util/concurrent/SmoothRateLimiter.java</url>
+          <line>335</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/guava/LimiterTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="195" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

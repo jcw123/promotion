@@ -16,11 +16,12 @@ import java.util.Properties;
 public class Main {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
         People people = context.getBean(People.class);
-        people.say();
-        Properties properties = System.getProperties();
-        Map<String, String> map = System.getenv();
-        System.out.println("end");
+//        people.say();
+        System.out.println("name:" + people.getName());
+//        Properties properties = System.getProperties();
+//        Map<String, String> map = System.getenv();
+//        System.out.println("end");
     }
 }

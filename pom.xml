@@ -6,11 +6,8 @@
 
   <groupId>com.im.sky</groupId>
   <artifactId>promotion</artifactId>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>leetcode</module>
-  </modules>
 
   <name>promotion</name>
 
@@ -45,7 +42,6 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.4</version>
-      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -193,9 +189,37 @@
       <version>4.0.1</version>
     </dependency>
 
+    <!-- 压缩包工具，提供了 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>transmittable-thread-local</artifactId>
+      <version>2.11.5</version>
+    </dependency>
+
   </dependencies>
 
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -205,6 +229,15 @@
           <source>1.8</source>
           <target>1.8</target>
           <encoding>utf-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <skipTests>true</skipTests>
         </configuration>
       </plugin>
     </plugins>
