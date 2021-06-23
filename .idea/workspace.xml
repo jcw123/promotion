@@ -1,789 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026caf0a-e20d-4a75-bd44-54c0bfa75617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_1642/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/im/sky/leetcode/q_1642/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/github/commons_compress/BasicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/guava/LimiterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/coding/UTF8Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reflect/Custom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/reflect/TypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/threadlocal/ThreadLocalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/mybatis/handler/PersonTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/MathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/NMTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/xml/Dom4JTest.java" afterDir="false" />
+    <list default="true" id="495cd190-f3e6-4fa3-b79f-83850080719b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_transmittable_thread_local_2_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_32_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_1_2_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jeasy_easy_rules_core_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_25_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_25_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_25_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_25_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_25_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/im/sky/test/javassist/data/Man.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/J_38.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/LCP03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/LCP19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/LCP22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/LCP23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution1_421.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_1049.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_1049_V2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_1190.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_1882.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_1888.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_342.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_401_V2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_477.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_879.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/algorithms/Solution_879_V2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/t1/JokeClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/t1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/javacore/datastructure/list/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/opensource/easyrules/EasyRulesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/advice/HelloMethodBeforeAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/IPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bootstrap/Bootstrap2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/StackTraceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/extendtest/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/extendtest/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/extendtest/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/javassist/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/javassist/data/Man.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/javassist/data/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/schedule/TimerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/aspect/GenericAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/aspect/GenericAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bean/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bootstrap/Bootstrap1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/spring/bootstrap/Bootstrap1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/system.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="promotion" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-        <option value="FxmlFile" />
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="AnnotationType" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.2.5\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectId" id="1uLQZcbB45LFF5WT1zCSVO8AHJD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="ProjectId" id="1SivShCsmdXw6nC3ipjZ36NHezB" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="Application.Test (1)">
-    <configuration name="Dom4JTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.xml.Dom4JTest" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.xml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.spring.Main" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NMTTest" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.test.NMTTest" />
-      <module name="promotion" />
-      <option name="VM_PARAMETERS" value="-XX:NativeMemoryTracking=detail" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.test.Test" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.threadlocal.ThreadLocalTest" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.threadlocal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TypeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.im.sky.javacore.reflect.TypeTest" />
-      <module name="promotion" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.im.sky.javacore.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.NMTTest" />
-      <item itemvalue="Application.Test (1)" />
-      <item itemvalue="Application.Dom4JTest" />
-      <item itemvalue="Application.TypeTest" />
-      <item itemvalue="Application.ThreadLocalTest" />
-      <item itemvalue="Application.Main" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ThreadLocalTest" />
-        <item itemvalue="Application.TypeTest" />
-        <item itemvalue="Application.Dom4JTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="026caf0a-e20d-4a75-bd44-54c0bfa75617" name="Default Changelist" comment="" />
-      <created>1572059233615</created>
+      <changelist id="495cd190-f3e6-4fa3-b79f-83850080719b" name="Default Changelist" comment="" />
+      <created>1624442445962</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572059233615</updated>
-      <workItem from="1572059243001" duration="9119000" />
-      <workItem from="1572176722653" duration="6871000" />
-      <workItem from="1572233083843" duration="531000" />
-      <workItem from="1572233675053" duration="17000" />
-      <workItem from="1572314758670" duration="9501000" />
-      <workItem from="1572332197521" duration="5007000" />
-      <workItem from="1572399328468" duration="1255000" />
-      <workItem from="1572404398916" duration="734000" />
-      <workItem from="1572405328598" duration="555000" />
-      <workItem from="1572405961938" duration="1218000" />
-      <workItem from="1572913923290" duration="3872000" />
-      <workItem from="1573123239222" duration="8073000" />
-      <workItem from="1573182015432" duration="13386000" />
-      <workItem from="1573289346596" duration="9193000" />
-      <workItem from="1573351300480" duration="15717000" />
-      <workItem from="1573544568122" duration="5328000" />
-      <workItem from="1573625596815" duration="672000" />
-      <workItem from="1573973171143" duration="2243000" />
-      <workItem from="1573983398912" duration="2854000" />
-      <workItem from="1574057444835" duration="2568000" />
-      <workItem from="1574128047666" duration="2521000" />
-      <workItem from="1574214846926" duration="11861000" />
-      <workItem from="1574262704349" duration="7536000" />
-      <workItem from="1574347111702" duration="6468000" />
-      <workItem from="1574397643335" duration="5326000" />
-      <workItem from="1574419074402" duration="573000" />
-      <workItem from="1574565010863" duration="4440000" />
-      <workItem from="1574599289119" duration="2043000" />
-      <workItem from="1574649530906" duration="3778000" />
-      <workItem from="1574691915953" duration="169000" />
-      <workItem from="1574744245307" duration="1180000" />
-      <workItem from="1575082123552" duration="22949000" />
-      <workItem from="1575117631492" duration="23325000" />
-      <workItem from="1575469264608" duration="18007000" />
-      <workItem from="1575546478740" duration="861000" />
-      <workItem from="1575550217657" duration="28128000" />
-      <workItem from="1575684867156" duration="24956000" />
-      <workItem from="1575785436196" duration="12027000" />
-      <workItem from="1575899816484" duration="5798000" />
-      <workItem from="1575942977995" duration="2769000" />
-      <workItem from="1576029772603" duration="5153000" />
-      <workItem from="1576138293770" duration="2509000" />
-      <workItem from="1576204397092" duration="3137000" />
-      <workItem from="1576461742832" duration="1962000" />
-      <workItem from="1576477587837" duration="2546000" />
-      <workItem from="1576659281341" duration="1139000" />
-      <workItem from="1576807240099" duration="10018000" />
-      <workItem from="1577066797894" duration="3766000" />
-      <workItem from="1577109556118" duration="36000" />
-      <workItem from="1577154075779" duration="60000" />
-      <workItem from="1577416633278" duration="3220000" />
-      <workItem from="1577672601607" duration="3922000" />
-      <workItem from="1577949544487" duration="13528000" />
-      <workItem from="1578023360014" duration="18595000" />
-      <workItem from="1578100456943" duration="27000" />
-      <workItem from="1578100723913" duration="198000" />
-      <workItem from="1578103564009" duration="7000" />
-      <workItem from="1578103639466" duration="18738000" />
-      <workItem from="1578275611731" duration="28000" />
-      <workItem from="1578275679749" duration="19910000" />
-      <workItem from="1578311381007" duration="1361000" />
-      <workItem from="1578361682884" duration="9148000" />
-      <workItem from="1578447667803" duration="22508000" />
-      <workItem from="1578578908151" duration="798000" />
-      <workItem from="1578621501776" duration="70000" />
-      <workItem from="1578621615369" duration="2872000" />
-      <workItem from="1578879994404" duration="1885000" />
-      <workItem from="1578966912186" duration="1536000" />
-      <workItem from="1579055315194" duration="9210000" />
-      <workItem from="1579140131871" duration="2523000" />
-      <workItem from="1579246044009" duration="676000" />
-      <workItem from="1579399246543" duration="5437000" />
-      <workItem from="1581417698101" duration="763000" />
-      <workItem from="1581475686071" duration="1768000" />
-      <workItem from="1581503324541" duration="748000" />
-      <workItem from="1581558514613" duration="1217000" />
-      <workItem from="1581659863150" duration="4259000" />
-      <workItem from="1581904571985" duration="3100000" />
-      <workItem from="1581990354038" duration="730000" />
-      <workItem from="1582076607809" duration="1346000" />
-      <workItem from="1582853236861" duration="11140000" />
-      <workItem from="1583144029588" duration="950000" />
-      <workItem from="1583894825632" duration="7185000" />
-      <workItem from="1583975732513" duration="573000" />
-      <workItem from="1584063934996" duration="592000" />
-      <workItem from="1584324195206" duration="1876000" />
-      <workItem from="1584409975905" duration="3418000" />
-      <workItem from="1584432190059" duration="596000" />
-      <workItem from="1584496663049" duration="2045000" />
-      <workItem from="1584581359064" duration="1811000" />
-      <workItem from="1584589576513" duration="1216000" />
-      <workItem from="1584669812264" duration="834000" />
-      <workItem from="1584928261184" duration="640000" />
-      <workItem from="1584933808885" duration="583000" />
-      <workItem from="1585050059441" duration="593000" />
-      <workItem from="1585101430807" duration="14578000" />
-      <workItem from="1585188195889" duration="1409000" />
-      <workItem from="1585300490327" duration="2426000" />
-      <workItem from="1585623022277" duration="2414000" />
-      <workItem from="1585705961424" duration="768000" />
-      <workItem from="1585740717440" duration="956000" />
-      <workItem from="1585792553976" duration="709000" />
-      <workItem from="1585878845770" duration="2643000" />
-      <workItem from="1586246736213" duration="9867000" />
-      <workItem from="1586317382685" duration="1228000" />
-      <workItem from="1586414143316" duration="2892000" />
-      <workItem from="1586488806091" duration="1206000" />
-      <workItem from="1586743570747" duration="679000" />
-      <workItem from="1586830189344" duration="581000" />
-      <workItem from="1586952207471" duration="488000" />
-      <workItem from="1587088888874" duration="664000" />
-      <workItem from="1587348016118" duration="2062000" />
-      <workItem from="1587521623447" duration="5551000" />
-      <workItem from="1587624036783" duration="3722000" />
-      <workItem from="1587696506708" duration="1563000" />
-      <workItem from="1587866272699" duration="3732000" />
-      <workItem from="1587953070996" duration="785000" />
-      <workItem from="1587961879771" duration="4701000" />
-      <workItem from="1588061041491" duration="1206000" />
-      <workItem from="1588126833825" duration="1320000" />
-      <workItem from="1588211951790" duration="1189000" />
-      <workItem from="1588481066580" duration="1403000" />
-      <workItem from="1588730564844" duration="2758000" />
-      <workItem from="1588821295657" duration="1525000" />
-      <workItem from="1588903038046" duration="582000" />
-      <workItem from="1589199902303" duration="594000" />
-      <workItem from="1589251254658" duration="6965000" />
-      <workItem from="1589345292729" duration="7050000" />
-      <workItem from="1589431512307" duration="1337000" />
-      <workItem from="1589531475159" duration="5521000" />
-      <workItem from="1589772576124" duration="8946000" />
-      <workItem from="1589944403447" duration="15196000" />
-      <workItem from="1590381388335" duration="14766000" />
-      <workItem from="1590465036194" duration="27015000" />
-      <workItem from="1590551308438" duration="8097000" />
-      <workItem from="1590570794209" duration="9895000" />
-      <workItem from="1590624955572" duration="22472000" />
-      <workItem from="1590749663536" duration="632000" />
-      <workItem from="1591179619979" duration="3977000" />
-      <workItem from="1591250396975" duration="5385000" />
-      <workItem from="1591342115169" duration="3831000" />
-      <workItem from="1591683064671" duration="6776000" />
-      <workItem from="1591700375319" duration="3606000" />
-      <workItem from="1591855934296" duration="14604000" />
-      <workItem from="1591928120066" duration="8508000" />
-      <workItem from="1592117875946" duration="3015000" />
-      <workItem from="1592182956335" duration="22517000" />
-      <workItem from="1592268768822" duration="7819000" />
-      <workItem from="1592390426156" duration="4864000" />
-      <workItem from="1592457177077" duration="21267000" />
-      <workItem from="1592820345014" duration="7724000" />
-      <workItem from="1592883875142" duration="23805000" />
-      <workItem from="1592963402611" duration="15886000" />
-      <workItem from="1593594656905" duration="10856000" />
-      <workItem from="1593683469530" duration="7923000" />
-      <workItem from="1593739898944" duration="10670000" />
-      <workItem from="1593942983524" duration="583000" />
-      <workItem from="1593999903185" duration="11989000" />
-      <workItem from="1594115995161" duration="832000" />
-      <workItem from="1594173177135" duration="1207000" />
-      <workItem from="1594188455735" duration="5078000" />
-      <workItem from="1594261481153" duration="14584000" />
-      <workItem from="1594365663297" duration="915000" />
-      <workItem from="1594604245173" duration="1407000" />
-      <workItem from="1594690905669" duration="7161000" />
-      <workItem from="1594891274783" duration="9527000" />
-      <workItem from="1594950727389" duration="668000" />
-      <workItem from="1595135418169" duration="5430000" />
-      <workItem from="1595225506750" duration="1673000" />
-      <workItem from="1595296600449" duration="10474000" />
-      <workItem from="1595334220610" duration="2181000" />
-      <workItem from="1595381858757" duration="14284000" />
-      <workItem from="1595468998168" duration="561000" />
-      <workItem from="1595472341747" duration="13513000" />
-      <workItem from="1595555025981" duration="7940000" />
-      <workItem from="1595752367622" duration="1783000" />
-      <workItem from="1596161493966" duration="2719000" />
-      <workItem from="1596371106806" duration="1434000" />
-      <workItem from="1596420419930" duration="629000" />
-      <workItem from="1596515924656" duration="3030000" />
-      <workItem from="1596775254054" duration="7853000" />
-      <workItem from="1597025697778" duration="4937000" />
-      <workItem from="1597068406643" duration="938000" />
-      <workItem from="1597112598776" duration="4495000" />
-      <workItem from="1597200807376" duration="13613000" />
-      <workItem from="1597289709303" duration="283000" />
-      <workItem from="1597306715044" duration="5380000" />
-      <workItem from="1597376151082" duration="550000" />
-      <workItem from="1597562339659" duration="6074000" />
-      <workItem from="1597629078007" duration="2294000" />
-      <workItem from="1597715017255" duration="1213000" />
-      <workItem from="1597720913288" duration="581000" />
-      <workItem from="1597731971010" duration="2233000" />
-      <workItem from="1597801882020" duration="5247000" />
-      <workItem from="1597918359241" duration="7610000" />
-      <workItem from="1598004639965" duration="596000" />
-      <workItem from="1598077511175" duration="3429000" />
-      <workItem from="1598422113729" duration="2097000" />
-      <workItem from="1598427599527" duration="2497000" />
-      <workItem from="1599460565891" duration="782000" />
-      <workItem from="1599487608227" duration="73000" />
-      <workItem from="1600163641150" duration="3845000" />
-      <workItem from="1600258725846" duration="4073000" />
-      <workItem from="1600308750249" duration="10372000" />
-      <workItem from="1600335492469" duration="2779000" />
-      <workItem from="1600398620985" duration="8207000" />
-      <workItem from="1600653360634" duration="12615000" />
-      <workItem from="1600769982557" duration="2911000" />
-      <workItem from="1600826162359" duration="2941000" />
-      <workItem from="1600955902779" duration="1734000" />
-      <workItem from="1600999767355" duration="916000" />
-      <workItem from="1601005006877" duration="9599000" />
-      <workItem from="1601171971653" duration="16291000" />
-      <workItem from="1601257099271" duration="1329000" />
-      <workItem from="1602208432779" duration="3866000" />
-      <workItem from="1602296710740" duration="6757000" />
-      <workItem from="1602489692794" duration="14023000" />
-      <workItem from="1602570833743" duration="6699000" />
-      <workItem from="1602640357140" duration="7657000" />
-      <workItem from="1602729290327" duration="8559000" />
-      <workItem from="1602932413830" duration="696000" />
-      <workItem from="1603072373707" duration="586000" />
-      <workItem from="1603421161718" duration="1898000" />
-      <workItem from="1603677793553" duration="9143000" />
-      <workItem from="1603855991278" duration="2541000" />
-      <workItem from="1604049422733" duration="1368000" />
-      <workItem from="1604126306498" duration="1195000" />
-      <workItem from="1604178289473" duration="2839000" />
-      <workItem from="1604298836405" duration="3396000" />
-      <workItem from="1604393583991" duration="6136000" />
-      <workItem from="1604459722592" duration="13987000" />
-      <workItem from="1604545639818" duration="1484000" />
-      <workItem from="1604630199304" duration="4678000" />
-      <workItem from="1604653160983" duration="1833000" />
-      <workItem from="1604888217388" duration="1469000" />
-      <workItem from="1604973070904" duration="581000" />
-      <workItem from="1604994498815" duration="217000" />
-      <workItem from="1604994915344" duration="4967000" />
-      <workItem from="1605068462816" duration="552000" />
-      <workItem from="1605165732845" duration="2102000" />
-      <workItem from="1605233101425" duration="5409000" />
-      <workItem from="1605492220458" duration="558000" />
-      <workItem from="1605578419388" duration="560000" />
-      <workItem from="1605665251260" duration="581000" />
-      <workItem from="1605750870446" duration="2597000" />
-      <workItem from="1605837614432" duration="1486000" />
-      <workItem from="1605860840891" duration="652000" />
-      <workItem from="1606098894474" duration="921000" />
-      <workItem from="1607305025090" duration="2878000" />
-      <workItem from="1607585206514" duration="662000" />
-      <workItem from="1607743385616" duration="783000" />
-      <workItem from="1607911605016" duration="755000" />
-      <workItem from="1607997649617" duration="803000" />
-      <workItem from="1608084480506" duration="557000" />
-      <workItem from="1608608233114" duration="2512000" />
-      <workItem from="1609126318414" duration="3217000" />
-      <workItem from="1609157798085" duration="1574000" />
-      <workItem from="1609223638868" duration="977000" />
-      <workItem from="1609728767543" duration="2664000" />
-      <workItem from="1609812793699" duration="2263000" />
-      <workItem from="1609986911804" duration="2248000" />
-      <workItem from="1610071980949" duration="559000" />
-      <workItem from="1611029670100" duration="9326000" />
-      <workItem from="1611628239677" duration="2653000" />
-      <workItem from="1611712631886" duration="1671000" />
-      <workItem from="1612173986372" duration="2508000" />
-      <workItem from="1612233203883" duration="1253000" />
-      <workItem from="1612317464500" duration="3799000" />
-      <workItem from="1612404318067" duration="3088000" />
-      <workItem from="1612490580755" duration="1429000" />
-      <workItem from="1612837792100" duration="1721000" />
-      <workItem from="1613984450276" duration="701000" />
-      <workItem from="1614045419971" duration="3349000" />
-      <workItem from="1615534437146" duration="590000" />
-      <workItem from="1615776450906" duration="598000" />
-      <workItem from="1615811799998" duration="579000" />
+      <updated>1624442445962</updated>
+      <workItem from="1624442447925" duration="255000" />
     </task>
-    <task id="LOCAL-00001" summary="spring、netty等等只是记录">
-      <created>1578276780276</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1578276780276</updated>
-    </task>
-    <task id="LOCAL-00002" summary="删除敏感信息">
-      <created>1578283046457</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1578283046457</updated>
-    </task>
-    <task id="LOCAL-00003" summary="泛型、lambada表达式">
-      <created>1584324842554</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1584324842554</updated>
-    </task>
-    <task id="LOCAL-00004" summary="动态代理">
-      <created>1588731494634</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1588731494635</updated>
-    </task>
-    <task id="LOCAL-00005" summary="rpc和netty demo">
-      <created>1595303842606</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1595303842606</updated>
-    </task>
-    <task id="LOCAL-00006" summary="类加载和tomcat demo">
-      <created>1602209002158</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1602209002158</updated>
-    </task>
-    <task id="LOCAL-00007" summary="leetcode">
-      <created>1603887960711</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1603887960711</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="spring、netty等等只是记录" />
-    <MESSAGE value="删除敏感信息" />
-    <MESSAGE value="泛型、lambada表达式" />
-    <MESSAGE value="动态代理" />
-    <MESSAGE value="rpc和netty demo" />
-    <MESSAGE value="类加载和tomcat demo" />
-    <MESSAGE value="leetcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/lock/juc/aqs/CountDownLatch.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/limit/TokenLimit.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/limit/TokenLimit.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/example/echo/EchoServer.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerOutHandler.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="157" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
-          <line>319</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java</url>
-          <line>254</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
-          <line>485</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/Client.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java</url>
-          <line>764</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java</url>
-          <line>964</line>
-          <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerInHandler.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="167" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/netty/test/test1/handler/ServerParentHandler.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/stream/StreamTest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/datastructure/BitSetTest.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/Test.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/Soluton6.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/Solution7.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/net/SocketInputStream.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="179" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/other/Snowflake.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="180" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/test/SetEqualsTest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="181" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/mysql/mvcc/MVCCTest.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/mysql/mvcc/MVCCTest.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/ServiceLoader.java</url>
-          <line>536</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/classloader/connectionloader/Test.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="185" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/collection/SelfConcurrentHashMap.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ConcurrentHashMap.java</url>
-          <line>1062</line>
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/javacore/regex/Test.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="191" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/util/concurrent/SmoothRateLimiter.java</url>
-          <line>335</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/im/sky/guava/LimiterTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="((org.apache.ibatis.session.Configuration.StrictMap)this.mappedStatements).entrySet().toArray()[2]" custom="org.apache.ibatis.session.Configuration.StrictMap" />
-        <watch expression="((java.util.concurrent.ConcurrentHashMap)this).entrySet().toArray()[0]" custom="java.util.concurrent.ConcurrentHashMap" />
-      </configuration>
-    </watches-manager>
+  <component name="WindowStateProjectService">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624442521103">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120/1792.-9.1920.1057@0.0.1792.1120" timestamp="1624442521103" />
+    <state x="554" y="317" width="683" height="486" key="find.popup" timestamp="1624442772277">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="554" y="317" width="683" height="486" key="find.popup/0.0.1792.1120/1792.-9.1920.1057@0.0.1792.1120" timestamp="1624442772277" />
   </component>
 </project>

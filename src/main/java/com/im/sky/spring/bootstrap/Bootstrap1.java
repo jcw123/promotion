@@ -1,7 +1,10 @@
 package com.im.sky.spring.bootstrap;
 
-import com.im.sky.spring.model.People;
+import com.im.sky.spring.bean.IPeople;
+import com.im.sky.spring.bean.People;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author jiangchangwei
@@ -10,8 +13,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Bootstrap1 {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext("com.im.sky.spring");
-        People people = applicationContext.getBean(People.class);
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
+        IPeople people = applicationContext.getBean(IPeople.class);
         people.say();
     }
 }

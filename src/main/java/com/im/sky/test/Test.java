@@ -1,6 +1,7 @@
 package com.im.sky.test;
 
 import com.alibaba.fastjson.JSON;
+import com.im.sky.reflect.People;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 
 import java.io.BufferedReader;
@@ -37,8 +38,12 @@ public class Test {
     private static final Object MUTEX = new Object();
 
     public static void main(String[] args) throws Exception {
-        Map<String, Character> map = new HashMap<>();
-        System.out.println('1' == map.get("test"));
+    }
+
+    private static class He {
+        private int age = -999;
+
+        private String name = "jcw";
     }
 
     public void testScene2() {
@@ -63,6 +68,20 @@ public class Test {
 ////            flag = 2;
 ////        }
         flag = 2;
+    }
+
+    static String readContent(String path) {
+        try {
+            File file  = new File(path);
+            Long length = file.length();
+            byte[] data = new byte[length.intValue()];
+            FileInputStream in = new FileInputStream(file);
+            in.read(data);
+            in.close();
+            return new String(data, "utf-8");
+        }catch(Exception e) {
+        }
+        return null;
     }
 
 }

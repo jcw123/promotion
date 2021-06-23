@@ -28,6 +28,8 @@ public class GenericAdvice {
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("around advice for before");
         Object o = pjp.proceed(pjp.getArgs());
+        System.out.println("declaringType:" + pjp.getSignature().getDeclaringType());
+        System.out.println("delaringName:" + pjp.getSignature().getDeclaringTypeName());
         System.out.println("around advice for after");
         return o;
     }

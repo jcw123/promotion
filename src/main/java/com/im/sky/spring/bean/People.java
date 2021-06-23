@@ -12,9 +12,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2019-9-14 上午 10:40
  * @Version 1.0
  */
-@Service
-@Lazy(value = true)
-public class People implements ApplicationContextAware {
+public class People implements ApplicationContextAware,IPeople {
 
     @Value("${lover:zh}")
     private String lover;
@@ -41,6 +39,5 @@ public class People implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        applicationContext.getBean(People.class).say();
     }
 }
