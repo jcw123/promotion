@@ -26,6 +26,5 @@ public class Test {
     private static void testCreateNewClassAndMethod() throws Exception {
         ClassPool pool = ClassPool.getDefault();
         CtClass cc = pool.makeClass("Joy");
-        pool.do
     }
 }

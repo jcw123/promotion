@@ -38,6 +38,7 @@ public class Test {
     private static final Object MUTEX = new Object();
 
     public static void main(String[] args) throws Exception {
+        System.out.println("hello, world");
     }
 
     private static class He {
