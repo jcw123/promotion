@@ -220,6 +220,20 @@
       <version>3.27.0-GA</version>
     </dependency>
 
+    <dependency> <!-- 用于测试用例断言 -->
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.11.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency> <!-- 对于依赖的外部资源，可以使用这个包进行Mock获得 -->
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.11.2</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
