@@ -10,12 +10,14 @@ public class SelfWeakReferenceTest {
 
     public static void main(String[] args) throws Exception {
         ReferenceQueue<People> referenceQueue = new ReferenceQueue<>();
-        SelfWeakReference<People> weakReference = new SelfWeakReference<>(new People(), referenceQueue);
+        People people = new People();
+        SelfWeakReference<People> weakReference = new SelfWeakReference<>(people, referenceQueue);
         SelfWeakReference<People> weakReference1 = new SelfWeakReference<>(new People(), referenceQueue);
         System.out.println(weakReference.get());
         System.out.println(weakReference1.get());
         System.out.println(referenceQueue.poll());
         System.out.println(referenceQueue.poll());
+        people = null;
         System.gc();
         Thread.sleep(1000);
         System.out.println(weakReference.get());

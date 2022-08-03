@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -16,7 +17,9 @@ public class Test {
 
     @org.junit.Test
     public void test() {
-        System.out.println(!true || true && false);
+        List<Integer> list = new ArrayList<>(0);
+        Integer[] m = list.toArray(new Integer[1]);
+        System.out.println(m.length);
     }
 
     public void set(Object a) {
@@ -115,4 +118,21 @@ public class Test {
         int b = 4;
         System.out.println((double) (a / b));
     }
+
+    @org.junit.Test
+    public void test5() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("test", new BigDecimal("2.30"));
+        System.out.println(JSON.toJSONString(map));
+    }
+
+    private void a(List<Long> list) {
+        list.forEach(i->{
+            System.out.println(i);
+        });
+        for(Long i : list) {
+            System.out.println(i);
+        }
+    }
+
 }

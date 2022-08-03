@@ -2,6 +2,7 @@ package com.im.sky.test;
 
 import com.alibaba.fastjson.JSON;
 import com.im.sky.reflect.People;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 
 import java.io.BufferedReader;
@@ -12,6 +13,7 @@ import java.lang.annotation.*;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
@@ -38,6 +40,15 @@ public class Test {
     private static final Object MUTEX = new Object();
 
     public static void main(String[] args) throws Exception {
+        String s1 = "33" + "44";
+        String s2 = "334" + "4";
+        Map<byte[], byte[]> map = new HashMap<>();
+        System.out.println("3344".getBytes(StandardCharsets.UTF_8).hashCode());
+        System.out.println(Arrays.hashCode("3344".getBytes(StandardCharsets.UTF_8)));
+        System.out.println("3344".getBytes(StandardCharsets.UTF_8).equals("3344".getBytes(StandardCharsets.UTF_8)));
+        map.put("3344".getBytes(StandardCharsets.UTF_8), new byte[0]);
+        System.out.println(map.containsKey(s1.getBytes(StandardCharsets.UTF_8)));
+        System.out.println(map.containsKey(s2.getBytes(StandardCharsets.UTF_8)));
     }
 
     private static class He {
@@ -72,14 +83,14 @@ public class Test {
 
     static String readContent(String path) {
         try {
-            File file  = new File(path);
+            File file = new File(path);
             Long length = file.length();
             byte[] data = new byte[length.intValue()];
             FileInputStream in = new FileInputStream(file);
             in.read(data);
             in.close();
             return new String(data, "utf-8");
-        }catch(Exception e) {
+        } catch (Exception e) {
         }
         return null;
     }

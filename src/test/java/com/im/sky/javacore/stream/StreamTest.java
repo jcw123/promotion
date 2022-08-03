@@ -5,9 +5,11 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Spliterator;
 import java.util.function.Consumer;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 /**
@@ -27,7 +29,6 @@ public class StreamTest {
 
     @Test
     public void test2() {
-
     }
 
 }
