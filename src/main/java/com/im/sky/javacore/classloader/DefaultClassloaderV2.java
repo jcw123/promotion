@@ -4,21 +4,11 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
-/**
- * @author jiangchangwei
- * @date 2020-7-1 下午 8:11
- **/
-public class DefaultClassloader extends ClassLoader {
+public class DefaultClassloaderV2 extends ClassLoader {
 
     private String classPath;
 
-    public DefaultClassloader(String classPath) {
-        super(null);
-        this.classPath = classPath;
-    }
-
-    public DefaultClassloader(String classPath, ClassLoader parent) {
-        super(parent);
+    public DefaultClassloaderV2(String classPath) {
         this.classPath = classPath;
     }
 
@@ -39,7 +29,7 @@ public class DefaultClassloader extends ClassLoader {
                 bao.write(arr, 0, len);
             }
         }catch (Exception e) {
-            e.printStackTrace();
+
         }
         return bao.toByteArray();
     }

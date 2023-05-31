@@ -1,58 +1,89 @@
 package com.im.sky.test;
 
-/**
- * @author jiangchangwei
- * @date 2020-6-17 下午 9:11
- *
- * Serve 100 ml of soup A and 0 ml of soup B
- * Serve 75 ml of soup A and 25 ml of soup B
- * Serve 50 ml of soup A and 50 ml of soup B
- * Serve 25 ml of soup A and 75 ml of soup B
- *
- * Input:
- * 101
- * Output:
- * 0.69531
- * Expected:
- * 0.74219
- **/
+import java.util.*;
+
 class Solution {
-
-    double[][] memo = new double[200][200];
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.f(101, 101));
-        System.out.println(solution.soupServings(101));
+    List<Integer>[] tree;
+    int n;
+    int[] coins;
+    Map<String, Integer> mm = new HashMap<>();
+    Map<String, Integer> pp = new HashMap<>();
+    Map<String, Integer> tt = new HashMap<>();
+    int ans = Integer.MAX_VALUE;
+    int total = 0;
+    public int collectTheCoins(int[] coins, int[][] edges) {
+        this.coins = coins;
+        n = coins.length;
+        tree = new ArrayList[n];
+        for(int i = 0; i < n; i++) {
+            tree[i] = new ArrayList<>();
+        }
+        for(int[] e : edges) {
+            int u = e[0];
+            int v = e[1];
+            tree[u].add(v);
+            tree[v].add(u);
+        }
+        for(int i = 0; i < n; i++) {
+            dfs(i, -1, 0);
+            ans = Math.min(ans, total);
+            total = 0;
+        }
+        return ans;
     }
 
-    public double f(int a, int b) {
-        if (a <= 0 && b <= 0) return 0.5;
-        if (a <= 0) return 1;
-        if (b <= 0) return 0;
-        if (memo[a][b] > 0) return memo[a][b];
-        memo[a][b] = 0.25 * (f(a - 100, b) + f(a - 75, b - 25) + f(a - 50, b - 50) + f(a - 25, b - 75));
-        return memo[a][b];
-    }
 
-    public double soupServings(int N) {
-        if(N == 0) {
-            return 0.5;
+
+    private int count(int i, int p) {
+        String key = p + "_" + i;
+        if(pp.containsKey(key)) {
+            return pp.get(key);
         }
-        double[][] dp = new double[N + 1][N + 1];
-        dp[0][0] = 0.5;
-        int i,j;
-        for(i = 1 ; i <= N ; i++) {
-            dp[0][i] = 1;
-        }
-        for(i = 1; i <= N; i++) {
-            for(j = 1; j <= N; j++) {
-                dp[i][j] += 0.25 * dp[Math.max(0, i - 100)][j];
-                dp[i][j] += 0.25 * dp[Math.max(0, i - 75)][Math.max(0, j - 25)];
-                dp[i][j] += 0.25 * dp[Math.max(0, i - 50)][Math.max(0, j - 50)];
-                dp[i][j] += 0.25 * dp[Math.max(0, i - 25)][Math.max(0, j - 75)];
+        Queue<int[]> q = new ArrayDeque<>();
+        q.offer(new int[]{i, p, 0});
+        int ans = 0;
+        while(!q.isEmpty()) {
+            int[] cur = q.poll();
+            if(cur[2] == 2) {
+                ans += dfs3(cur[0], cur[1]);
+            }else {
+                List<Integer> child = tree[cur[0]];
+                for(int ne : child) {
+                    if(ne != cur[1]) {
+                        q.offer(new int[]{ne, cur[0], cur[2] + 1});
+                    }
+                }
             }
         }
-        return dp[N][N];
+        return ans;
+    }
+
+    private int dfs3(int i, int p) {
+        String key = p + "_" + i;
+        if(tt.containsKey(key)) {
+            return tt.get(key);
+        }
+        List<Integer> child = tree[i];
+        int ans = 0;
+        for(int ne : child) {
+            if(ne != p) {
+                ans += dfs3(i, ne);
+            }
+        }
+        tt.put(key, ans);
+        return ans;
+    }
+
+    private void dfs(int i, int p, int pLen) {
+        List<Integer> child = tree[i];
+        for(int ne : child) {
+            if(ne != p) {
+                if(count(i, p) == 0) {
+                    ans += pLen * 2;
+                }else {
+                    dfs(ne, i, pLen + 1);
+                }
+            }
+        }
     }
 }

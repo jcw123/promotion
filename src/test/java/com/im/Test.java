@@ -3,10 +3,15 @@ package com.im;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
+import java.net.URLClassLoader;
 import java.util.*;
 
 /**
@@ -17,9 +22,6 @@ public class Test {
 
     @org.junit.Test
     public void test() {
-        List<Integer> list = new ArrayList<>(0);
-        Integer[] m = list.toArray(new Integer[1]);
-        System.out.println(m.length);
     }
 
     public void set(Object a) {
@@ -41,8 +43,6 @@ public class Test {
 
         }
     }
-
-    private static
 
     interface B {
         void getB();
@@ -135,4 +135,70 @@ public class Test {
         }
     }
 
+    /**
+     *  111
+     *  011
+     *
+     *  111
+     *  001
+     *
+     *  111
+     */
+    @org.junit.Test
+    public void test6() {
+        int cap = 6;
+        int n = cap - 1;
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println((~(1 << 31)));
+        System.out.println(n >>> 1);
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        System.out.println(n);
+    }
+
+    @org.junit.Test
+    public void test7() {
+        Q.builder().a(1).build();
+    }
+
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    private static class Q {
+        private int a;
+    }
+
+
+    @org.junit.Test
+    public void test10() throws Exception {
+        Class.forName("com.im.Test1", true,ClassLoader.getSystemClassLoader());
+    }
+
+    @org.junit.Test
+    public void test11() {
+        Map<String, String> map = new HashMap<>();
+        map.put("test", "ss33");
+        System.out.println(JSON.toJSONString(map));
+    }
+
+    public static class TestLoad {
+
+    }
+
+
+    public static class T1 {
+        static {
+            System.out.println("start");
+            T2 t2 = new T2();
+            System.out.println("end");
+        }
+    }
+
+    public static class T2 {
+
+    }
 }

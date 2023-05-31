@@ -27,17 +27,12 @@ public class SkipList<T extends Comparable<T>> {
 
     private static final int maxLevel = 32;
 
-    private final Node root;
+    private final Node<T> root;
 
     private int size;
 
-    /**
-     * 记录拥有元素的最高一层
-     */
-    private int highestLevel;
-
     public SkipList() {
-        root = new Node(maxLevel);
+        root = new Node<>(maxLevel);
     }
 
     public boolean add(T key) {
@@ -46,17 +41,17 @@ public class SkipList<T extends Comparable<T>> {
         }
         int level = randomLevel();
         Node<T> newNode = new Node<>(level, key);
-        Node cur = root;
+        Node<T> cur = root;
         for(int i = maxLevel - 1; i >= 0; i--) {
-            Node node = cur;
-            Node tmp = null;
-            while(i < node.level && (tmp = node.nextPointers[i]) != null && key.compareTo((T)tmp.key) > 0) {
+            Node<T> node = cur;
+            Node<T> tmp = null;
+            while(i < node.level && (tmp = node.nextPointers[i]) != null && key.compareTo(tmp.key) > 0) {
                 node = tmp;
             }
-            if(tmp != null && key.compareTo((T)tmp.key) == 0) {
+            if(tmp != null && key.compareTo(tmp.key) == 0) {
                 return false;
             }else {
-                Node next = null;
+                Node<T> next = null;
                 if(i < node.level) {
                     next = node.nextPointers[i];
                 }
@@ -137,7 +132,7 @@ public class SkipList<T extends Comparable<T>> {
     private static class Node<M> {
         private M key;
 
-        private Node[] nextPointers;
+        private Node<M>[] nextPointers;
 
         private int[] distance;
 

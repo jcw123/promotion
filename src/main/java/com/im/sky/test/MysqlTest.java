@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.mysql.jdbc.ConnectionImpl;
 
 import javax.sql.DataSource;
+import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -23,16 +24,57 @@ public class MysqlTest {
 
     public static void main(String[] args) throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
-        ExecutorService executorService = Executors.newFixedThreadPool(40);
-        for(int i = 0; i < 1; i++) {
-            executorService.execute(new SqlTask());
-        }
-        executorService.shutdown();
-        while (!executorService.isTerminated()) {
+//        testKill();
+        testSocketTimeout();
+    }
 
+    private static void testSocketTimeout() throws Exception {
+        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test?socketTimeout=100", "root", "jcw123");
+        try {
+            PreparedStatement statement = con.prepareStatement("select sleep(30)");
+            statement.executeQuery();
+        }catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(con.isClosed());
         }
-        System.out.println("count：" + count.intValue());
 
+    }
+
+    private static void testKill() throws Exception {
+        try {
+            Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test", "root", "jcw123");
+            String sql = "select connection_id()";
+            PreparedStatement psmt;
+            psmt = con.prepareStatement(sql);
+            ResultSet resultSet = psmt.executeQuery();
+            resultSet.next();
+            String connectionId = resultSet.getString(1);
+            System.out.println(connectionId);
+            new Thread(() -> {
+                try {
+                    PreparedStatement sleepSt = con.prepareStatement("select sleep(10)");
+                    sleepSt.execute();
+                    System.out.println("t1");
+                }catch (Exception e) {
+
+                }
+            }).start();
+            Thread.sleep(2 * 1000);
+            try {
+                Connection con2 = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test", "root", "jcw123");
+                System.out.println("t3");
+                psmt = con2.prepareStatement("KILL QUERY ?");
+                psmt.setString(1, connectionId);
+                psmt.execute();
+                System.out.println("t2");
+                psmt = con.prepareStatement("select 1");
+                System.out.println(psmt.executeQuery().getString(1));
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }finally {
+            Thread.sleep(1  * 1000);
+        }
     }
 
     private static class SqlTask implements Runnable {
