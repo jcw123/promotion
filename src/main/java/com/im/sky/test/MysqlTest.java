@@ -29,10 +29,14 @@ public class MysqlTest {
     }
 
     private static void testSocketTimeout() throws Exception {
-        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test?socketTimeout=100", "root", "jcw123");
+        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test?socketTimeout=1000", "root", "jcw123");
         try {
-            PreparedStatement statement = con.prepareStatement("select sleep(30)");
-            statement.executeQuery();
+            for(int i = 0; i < 2; i++) {
+                System.out.println("test:" + i);
+                PreparedStatement statement = con.prepareStatement("select * from t1");
+                statement.executeQuery();
+                Thread.sleep(12 * 1000);
+            }
         }catch (Exception e) {
             e.printStackTrace();
             System.out.println(con.isClosed());

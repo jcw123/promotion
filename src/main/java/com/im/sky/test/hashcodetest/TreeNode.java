@@ -13,6 +13,7 @@ import lombok.EqualsAndHashCode;
 @Data
 public class TreeNode {
 
+    @EqualsAndHashCode.Exclude
     private TreeNode parent;
 
     private TreeNode left;
@@ -20,4 +21,19 @@ public class TreeNode {
     private TreeNode right;
 
     private int val;
+
+    public TreeNode() {
+    }
+
+    public TreeNode(int val) {
+        this.val = val;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        TreeNode node = new TreeNode(2);
+        root.left = node;
+        node.parent = root;
+        System.out.println(root.hashCode());
+    }
 }

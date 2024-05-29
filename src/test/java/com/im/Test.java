@@ -20,6 +20,23 @@ import java.util.*;
  **/
 public class Test {
 
+    class A3 {
+        public void say() {
+            System.out.println(getClass().getName());
+        }
+    }
+
+    class B3 extends A3 {
+
+    }
+
+    @org.junit.Test
+    public void test20() {
+        new B3().say();
+    }
+
+
+
     @org.junit.Test
     public void test() {
     }
@@ -185,8 +202,27 @@ public class Test {
         System.out.println(JSON.toJSONString(map));
     }
 
+    @org.junit.Test
+    public void test12() {
+        int[] arr = new int[]{3, 9, 10, 11, 12, 15};
+        Arrays.binarySearch(arr, 10);
+        String ss = "abcdef";
+        String s = "cd";
+        System.out.println(ss.contains(s));
+    }
+
+    @org.junit.Test
+    public void test13() {
+        System.out.println(a() == null);
+    }
+
     public static class TestLoad {
 
+    }
+
+
+    private Void a() {
+        return null;
     }
 
 

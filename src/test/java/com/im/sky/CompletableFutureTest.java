@@ -96,4 +96,29 @@ public class CompletableFutureTest {
         allC.get(4, TimeUnit.SECONDS);
         Thread.sleep(5 * 1000);
     }
+
+    @Test
+    public void test3() throws Exception {
+        for(int i = 0; i < 100; i++) {
+            CompletableFuture<String> c1 = CompletableFuture.supplyAsync(() -> {
+                try {
+//                    Thread.sleep(1000);
+                    return "jcw";
+                }catch(Exception e) {
+
+                }
+                return null;
+            })
+                    .thenApply(t -> {
+                        try {
+                            Thread.sleep(10000);
+                            return t + "123";
+                        }catch (Exception e) {
+
+                        }
+                        return null;
+                    });
+            System.out.println("ok");
+        }
+    }
 }
