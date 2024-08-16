@@ -2,14 +2,15 @@
 <Configuration>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%-5p] %X{PFTID} %C.%M - %msg%n"/>
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY" />
         </Console>
     </Appenders>
     <Loggers>
 
-        <Logger name="test.v1" level="info" additivity="false">
+        <AsyncLogger name="test.v1" level="info" includeLocation="true" additivity="false">
             <AppenderRef ref="Console"/>
-        </Logger>
+        </AsyncLogger>
 
         <Root level="debug">
             <AppenderRef ref="Console"/>

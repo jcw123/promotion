@@ -16,9 +16,7 @@ public class LogTest {
         URL url= ClassLoader.getSystemResource("log4j2.xml");
         ConfigurationSource source = new ConfigurationSource(new FileInputStream(new File(url.getPath())),url);
         Configurator.initialize(null, source);
-        Map<String, LoggerConfig> loggers = LoggerContext.getContext().getConfiguration().getLoggers();
         Logger logger = LogManager.getLogger("test.v1");
-        logger.isDebugEnabled();
-        logger.isInfoEnabled();
+        logger.error("你好");
     }
 }

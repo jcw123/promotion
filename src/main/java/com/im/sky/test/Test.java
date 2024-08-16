@@ -124,4 +124,5 @@ public class Test {
     static class A<T> extends P<T> {
         T data;
     }
+
 }

@@ -7,17 +7,23 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import net.sf.cglib.core.Local;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.net.URLClassLoader;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
  * @author jiangchangwei
  * @date 2019-11-18 下午 4:49
  **/
+@Slf4j
 public class Test {
 
     class A3 {
@@ -236,5 +242,50 @@ public class Test {
 
     public static class T2 {
 
+    }
+
+    @org.junit.Test
+    public void test30() {
+        StringJoiner sj = new StringJoiner("|");
+        String key = "test";
+        JSONArray vJ = new JSONArray();
+        Map<String, String> map = new HashMap<>();
+        map.put("1", "1");
+        vJ.add(map);
+        JSONArray iJ = new JSONArray();
+        iJ.add(iJ);
+        sj.add(vJ.toJSONString());
+        sj.add(iJ.toJSONString());
+        System.out.println(sj.toString());
+    }
+
+    @org.junit.Test
+    public void testThrowable() {
+        try {
+            throwException();
+        }catch (Throwable e) {
+            e.fillInStackTrace();
+            StackTraceElement[] elements = e.getStackTrace();
+            for(StackTraceElement element : elements) {
+                System.out.println(element);
+            }
+        }
+    }
+
+    private void throwException() {
+        try {
+            throw new RuntimeException("抛异常了");
+        }catch (Exception e) {
+            throw e;
+        }
+    }
+
+    @org.junit.Test
+    public void testDateFormat() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String s = LocalDateTime.parse("2022-12-12 00:00:00", formatter).format(formatter);
+        System.out.println(s);
+        LocalDateTime dateTime = LocalDateTime.of(2023, 12, 11, 11, 11, 11);
+        System.out.println(dateTime.format(formatter));
     }
 }
