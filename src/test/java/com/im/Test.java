@@ -47,6 +47,12 @@ public class Test {
     public void test() {
     }
 
+    @org.junit.Test
+    public void test21() {
+        int[] arr = new int[]{1, 2};
+        System.out.println(String.valueOf(arr));
+    }
+
     public void set(Object a) {
         a = new Object();
     }

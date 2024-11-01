@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
+<Configuration status="trace">
+
+    <Properties>
+        <Property name="asyncQueueFullPolicy">Discard</Property>
+        <Property name="asyncLoggerRingBufferSize">1</Property>
+        <Property name="asyncLoggerSynchronizeEnqueueWhenQueueFull">true</Property>
+        <Property name="COMMON_PATTERN">%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%-5p] %X{logId,CLIENT_APP_NAME,CLIENT_IP,PFTID} %C.%M - %msg%n</Property>
+    </Properties>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%-5p] %X{PFTID} %C.%M - %msg%n"/>
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY" />
         </Console>
+
+        <RollingRandomAccessFile name="infoFile" fileName="/Users/jiangchangwei/jcwwork/Logs/info.log"
+                                 filePattern="/Users/jiangchangwei/jcwwork/Logs/info-%i.log">
+            <PatternLayout pattern="${COMMON_PATTERN}" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="500MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingRandomAccessFile>
+
+        <Async name="asyncConsole">
+            <AppenderRef ref="Console"/>
+        </Async>
     </Appenders>
     <Loggers>
 
         <AsyncLogger name="test.v1" level="info" includeLocation="true" additivity="false">
-            <AppenderRef ref="Console"/>
+            <AppenderRef ref="infoFile"/>
         </AsyncLogger>
 
-        <Root level="debug">
+        <AsyncRoot level="info">
             <AppenderRef ref="Console"/>
-        </Root>
+        </AsyncRoot>
     </Loggers>
 </Configuration>

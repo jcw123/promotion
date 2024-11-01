@@ -23,6 +23,15 @@ public class AviatorTest {
         System.out.println(t);
     }
 
+    @Test
+    public void test3() {
+        Map<String, Object> env = new HashMap<>();
+        env.put("test", null);
+        String expr = "test2 == 3";
+        boolean res = (boolean)AviatorEvaluator.execute(expr, env);
+        System.out.println(res);
+    }
+
     public static class M {
         public String test() {
             return "tt";
