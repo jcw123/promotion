@@ -1,5 +1,9 @@
 package com.im;
 
+import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Test;
+
 /**
  * @author jiangchangwei
  * @program promotion
@@ -8,14 +12,22 @@ package com.im;
  **/
 public class Test1 {
 
-    static {
-        System.out.println("sleep start");
-        try {
-            Thread.sleep(20 * 1000);
-        }catch (Exception e) {
+    @Test
+    public void test1(){
+        String s = "11";
+        System.out.println(JSON.toJSONString(s));
+    }
 
-        }
-        System.out.println("sleep end");
-        Test2 test2 = new Test2();
+    @Test
+    public void test2() {
+        int m = 11;
+        System.out.println(JSON.toJSONString(m));
+    }
+
+    @Test
+    public void test3() throws Exception {
+        String s = new ObjectMapper().writeValueAsString("11");
+        s = new ObjectMapper().writeValueAsString(s);
+        System.out.println(s);
     }
 }

@@ -21,10 +21,18 @@
     </context:component-scan>
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="ignoreUnresolvablePlaceholders" value="false" />
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
         <property name="locations">
             <list>
                 <value>classpath:properties/system-tmp.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="locations">
+            <list>
                 <value>classpath:properties/system.properties</value>
             </list>
         </property>
@@ -32,7 +40,7 @@
 
     <bean id="advice" class="com.im.sky.spring.aspect.GenericAdvice" />
 
-    <aop:config proxy-target-class="false">
+    <aop:config proxy-target-class="true">
         <aop:aspect id="aspect1" ref="advice">
             <aop:pointcut id="p1" expression="execution(* com.im.sky.spring.bean.IPeople.say(..))" />
             <aop:before pointcut-ref="p1" method="before" />
