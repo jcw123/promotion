@@ -64,11 +64,10 @@ public class ClassPoolTest {
 
         cf.write(new DataOutputStream(new FileOutputStream("M.class")));
 
-        DefaultClassloader classloader = new DefaultClassloader(new String[]{"/Users/jiangchangwei/tmp/classfile"});
+        DefaultClassloader classloader = new DefaultClassloader(new String[]{"/Users/jiangchangwei/tmp/testjava/class"});
         DataInputStream dataInputStream = new DataInputStream(Objects.requireNonNull(classloader.getResourceAsStream("Test.class")));
         ClassFile classFile = new ClassFile(dataInputStream);
-
-        MethodInfo methodInfo = classFile.getMethod("test");
+        MethodInfo methodInfo = classFile.getMethod("say");
         CodeAttribute ca = methodInfo.getCodeAttribute();
         CodeIterator iterator = ca.iterator();
         while(iterator.hasNext()) {

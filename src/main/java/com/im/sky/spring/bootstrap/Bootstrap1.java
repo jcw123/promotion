@@ -1,9 +1,8 @@
 package com.im.sky.spring.bootstrap;
 
 import com.im.sky.spring.bean.IPeople;
-import com.im.sky.spring.bean.People;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.im.sky.spring.bean.InnerBeanInject;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -13,8 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Bootstrap1 {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop-test.xml");
         IPeople people = applicationContext.getBean(IPeople.class);
-        people.say();
+        people.cry();
     }
 }

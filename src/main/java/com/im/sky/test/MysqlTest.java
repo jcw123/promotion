@@ -1,17 +1,7 @@
 package com.im.sky.test;
 
-import com.alibaba.fastjson.JSON;
-import com.mysql.jdbc.ConnectionImpl;
-
-import javax.sql.DataSource;
-import javax.xml.transform.Result;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.sql.*;
+import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -25,7 +15,23 @@ public class MysqlTest {
     public static void main(String[] args) throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
 //        testKill();
-        testSocketTimeout();
+        testQueryTimeout();
+    }
+
+    private static void testQueryTimeout() throws Exception {
+        Properties props = new Properties();
+        props.setProperty("user", "root");
+        props.setProperty("password", "");
+        props.setProperty("trustCertificateKeyStore", "true");
+        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jcwtest?socketTimeout=1000", props);
+        Statement stmt = con.createStatement();
+            stmt.setQueryTimeout(5); // 设置查询超时为 30 秒
+            ResultSet rs = stmt.executeQuery("SELECT /*vt+ QUERY_TIMEOUT_MS=50 */ sleep(10)");
+            while (rs.next()) {
+                System.out.println(rs.getString("age"));
+            }
+            // 在使用完 Statement 对象后，关闭它以释放资源
+            rs.close();
     }
 
     private static void testSocketTimeout() throws Exception {

@@ -20,4 +20,9 @@ public class ClassLoaderTest {
         System.out.println(cls.getName());
     }
 
+    @Test
+    public void testLoadClass2() throws ClassNotFoundException {
+
+    }
+
 }

@@ -27,4 +27,11 @@ public class LamdaTest {
                 .ifPresent(System.out::println);
     }
 
+    public void test3() {
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        List<String> result = list.stream().collect(() -> new ArrayList<>(), (t, v) -> t.add(v), (t1, t2) -> t1.addAll(t2));
+    }
+
 }

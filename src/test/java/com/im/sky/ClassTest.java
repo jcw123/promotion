@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
+import java.util.List;
 
 public class ClassTest {
 
@@ -124,6 +125,11 @@ public class ClassTest {
         System.out.println("constructor22:" + constructor22);
         System.out.println(ics.isMemberClass());
         System.out.println(Modifier.isStatic(ics.getModifiers()));
+    }
+
+    @Test
+    public void test2() {
+        List<String> list;
     }
 
     interface A1 {}

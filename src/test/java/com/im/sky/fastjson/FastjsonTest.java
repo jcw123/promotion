@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.parser.ParserConfig;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.im.sky.spring.bean.People;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -37,6 +38,13 @@ public class FastjsonTest {
         map.put("1", test);
         Map map2 = JSON.parseObject(JSON.toJSONString(map));
         System.out.println(map2.get("1").getClass().getTypeName());
+    }
+
+    @Test
+    public void test3() {
+        People people = new People();
+        String s = JSON.toJSONString(people);
+        People people1 = JsonUtils.fromJson(s);
     }
 
 }

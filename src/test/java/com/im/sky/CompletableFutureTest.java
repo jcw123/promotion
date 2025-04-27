@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -120,5 +121,48 @@ public class CompletableFutureTest {
                     });
             System.out.println("ok");
         }
+    }
+
+    @Test
+    public void test4() throws Exception {
+        CompletableFuture.runAsync(() -> {
+            try {
+                System.out.println("t1 id:" + Thread.currentThread().getId());
+                Thread.sleep(10 * 1000);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).handleAsync((t1, t2) -> {
+            try {
+                Thread.sleep(5 * 1000);
+            }catch (Exception e) {
+
+            }
+            System.out.println("t2 id:" + Thread.currentThread().getId());
+            System.out.println("你好");
+            return t1;
+        }, Executors.newSingleThreadExecutor()).whenComplete((t1, t2) -> {
+            System.out.println("t3 id:" + Thread.currentThread().getId());
+        });
+        System.out.println("nihaoya");
+        Thread.sleep(20 * 1000);
+    }
+
+    @Test
+    public void test5() throws Exception {
+//        CompletableFuture.runAsync(() -> {
+//            try {
+//                System.out.println("t1 id:" + Thread.currentThread().getId());
+//                Thread.sleep(10 * 1000);
+//            }catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        });
+        CompletableFuture.supplyAsync(() -> 1)
+                        .thenCompose(t -> {
+                            return CompletableFuture.supplyAsync(() -> 2);
+                        }).complete(3);
+        System.out.println("nihaoya");
+        Thread.sleep(3 * 1000);
     }
 }

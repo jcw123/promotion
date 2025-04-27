@@ -19,7 +19,7 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
         People people = context.getBean(People.class);
 //        people.say();
-        System.out.println("name:" + people.getName());
+//        System.out.println("name:" + people.getName());
 //        Properties properties = System.getProperties();
 //        Map<String, String> map = System.getenv();
 //        System.out.println("end");

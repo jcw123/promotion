@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 /**
  * @author jiangchangwei
@@ -16,6 +18,20 @@ public class ThreadTest {
     public static final Object P = new Object();
 
     static List<Integer> list = new ArrayList<>();
+
+    @Test
+    public void test2() throws Exception {
+        Executor executor = Executors.newFixedThreadPool(12);
+        for(int i = 0; i < 12; i++) {
+            Runnable runnable = () -> {
+                while(true) {
+
+                }
+            };
+            executor.execute(runnable);
+        }
+        Thread.sleep(500000);
+    }
 
     @Test
     public void test() throws Exception {
