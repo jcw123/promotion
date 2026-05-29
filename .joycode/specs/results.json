@@ -1,0 +1,207 @@
+{
+  "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23": [
+    {
+      "message": "执行任务（date-validation-utility）: 1. 创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "status": "PENDING",
+      "specName": "date-validation-utility",
+      "specTaskId": "1",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_t": 1780046655234
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 2. 实现日期范围比较与日历语义校验",
+      "status": "PENDING",
+      "specName": "date-validation-utility",
+      "specTaskId": "2",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_t": 1780046655234
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 3. 实现出生日期校验与日期区间合法性校验",
+      "status": "PENDING",
+      "specName": "date-validation-utility",
+      "specTaskId": "3",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_t": 1780046655234
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "status": "PENDING",
+      "specName": "date-validation-utility",
+      "specTaskId": "4",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_t": 1780046655234
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 1. 创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "1",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-1-1780046655240",
+      "_t": 1780046656615,
+      "symbolSpecTaskKey": "spec-date-validation-utility-1-1780046655240",
+      "content": "执行任务（date-validation-utility）: 1. 创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "specTaskKey": "spec-date-validation-utility-1-1780046655240"
+    },
+    {
+      "message": "创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "1",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780046688840
+    },
+    {
+      "message": "创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "1",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780046811604
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 1. 创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "1",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-1-1780046655240",
+      "_t": 1780046811651,
+      "symbolSpecTaskKey": "spec-date-validation-utility-1-1780046655240",
+      "content": "执行任务（date-validation-utility）: 1. 创建 DateValidatorUtils 工具类骨架与日期/时间字符串校验能力",
+      "specTaskKey": "spec-date-validation-utility-1-1780046655240"
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 2. 实现日期范围比较与日历语义校验",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "2",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-2-1780046655240",
+      "_t": 1780046813543,
+      "symbolSpecTaskKey": "spec-date-validation-utility-2-1780046655240",
+      "content": "执行任务（date-validation-utility）: 2. 实现日期范围比较与日历语义校验",
+      "specTaskKey": "spec-date-validation-utility-2-1780046655240"
+    },
+    {
+      "message": "实现日期范围比较与日历语义校验",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "2",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780046821913
+    },
+    {
+      "message": "实现日期范围比较与日历语义校验",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "2",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780047178953
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 2. 实现日期范围比较与日历语义校验",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "2",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-2-1780046655240",
+      "_t": 1780047179017,
+      "symbolSpecTaskKey": "spec-date-validation-utility-2-1780046655240",
+      "content": "执行任务（date-validation-utility）: 2. 实现日期范围比较与日历语义校验",
+      "specTaskKey": "spec-date-validation-utility-2-1780046655240"
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 3. 实现出生日期校验与日期区间合法性校验",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "3",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-3-1780046655240",
+      "_t": 1780047180924,
+      "symbolSpecTaskKey": "spec-date-validation-utility-3-1780046655240",
+      "content": "执行任务（date-validation-utility）: 3. 实现出生日期校验与日期区间合法性校验",
+      "specTaskKey": "spec-date-validation-utility-3-1780046655240"
+    },
+    {
+      "message": "实现出生日期校验与日期区间合法性校验",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "3",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780047188245
+    },
+    {
+      "message": "实现出生日期校验与日期区间合法性校验",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "3",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780047401715
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 3. 实现出生日期校验与日期区间合法性校验",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "3",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-3-1780046655240",
+      "_t": 1780047401779,
+      "symbolSpecTaskKey": "spec-date-validation-utility-3-1780046655240",
+      "content": "执行任务（date-validation-utility）: 3. 实现出生日期校验与日期区间合法性校验",
+      "specTaskKey": "spec-date-validation-utility-3-1780046655240"
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "4",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-4-1780046655240",
+      "_t": 1780047403673,
+      "symbolSpecTaskKey": "spec-date-validation-utility-4-1780046655240",
+      "content": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "specTaskKey": "spec-date-validation-utility-4-1780046655240"
+    },
+    {
+      "message": "编写 DateValidatorUtilsTest 单元测试",
+      "status": "IN_PROGRESS",
+      "specName": "date-validation-utility",
+      "specTaskId": "4",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "_from": "specTask",
+      "_t": 1780047433278
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "status": "STOPPED",
+      "specName": "date-validation-utility",
+      "specTaskId": "4",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-4-1780046655240",
+      "_t": 1780047768732,
+      "symbolSpecTaskKey": "spec-date-validation-utility-4-1780046655240",
+      "content": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "specTaskKey": "spec-date-validation-utility-4-1780046655240"
+    },
+    {
+      "message": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "status": "FINISHED",
+      "specName": "date-validation-utility",
+      "specTaskId": "4",
+      "chatId": "task-5dbf38a3-b9f8-4f8a-a8ab-c63470539e23",
+      "id": "spec-date-validation-utility-4-1780046655240",
+      "_t": 1780047804043,
+      "symbolSpecTaskKey": "spec-date-validation-utility-4-1780046655240",
+      "content": "执行任务（date-validation-utility）: 4. 编写 DateValidatorUtilsTest 单元测试",
+      "specTaskKey": "spec-date-validation-utility-4-1780046655240"
+    }
+  ]
+}
