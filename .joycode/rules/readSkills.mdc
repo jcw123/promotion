@@ -1,0 +1,8 @@
+---
+globs: *
+alwaysApply: true
+---
+
+# 项目规则要求如下
+
+尝试去查找skill解决特定问题时，可以从./openSkillsAgents.md文件中查找相关的skills，然后在./agents中查找对应的skill明细。
