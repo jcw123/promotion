@@ -1,20 +1,24 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+# Project context
+context: |
+  Tech stack: Java 8+, Maven, JUnit 4
+  Package: com.im.sky
+  Framework: Spring (参考项目依赖)
+  Date API: java.time (禁用 java.util.Date/Calendar/SimpleDateFormat)
+  Coding style: 遵循阿里 Java 开发手册规范
+  Test: JUnit 4 单元测试
+  IDE integration: JoyCode (SDD workflow via /sdd:* commands)
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+# Per-artifact rules
+rules:
+  proposal:
+    - 提案应简洁清晰，明确描述做什么和为什么
+    - 包含"非目标"部分明确范围边界
+  design:
+    - 设计文档需包含技术架构图
+    - 明确线程安全和性能考量
+  tasks:
+    - 单个任务粒度控制在 2 小时内
+    - 每个任务需标注关联的需求编号
+    - 包含明确的交付物描述
